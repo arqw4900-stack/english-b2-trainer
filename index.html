@@ -1264,6 +1264,29 @@ function importProgress(d,replace){
   persist(); pushRemote(true);
 }
 
+// ---------- installable app: only on GitHub Pages / localhost (inside Claude the page runs as an artifact) ----------
+const IS_WEB=/(^|\.)github\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
+let installEvt=null;
+if(IS_WEB){
+  const add=(tag,attrs)=>{ const el=document.createElement(tag); for(const k in attrs) el.setAttribute(k,attrs[k]); document.head.appendChild(el); };
+  add("link",{rel:"manifest",href:"manifest.webmanifest"});
+  add("link",{rel:"apple-touch-icon",href:"icon-180.png"});
+  add("meta",{name:"theme-color",content:"#2d5bd7"});
+  add("meta",{name:"apple-mobile-web-app-capable",content:"yes"});
+  add("meta",{name:"apple-mobile-web-app-title",content:"English B2"});
+  if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});
+  window.addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); installEvt=e; });
+}
+function installField(){
+  const standalone=matchMedia("(display-mode: standalone)").matches||navigator.standalone===true;
+  const hint=standalone?"Тренажёр установлен как приложение и работает без интернета."
+    :installEvt?"После установки тренажёр работает без интернета."
+    :/iPhone|iPad|iPod/.test(navigator.userAgent)?"В Safari нажмите «Поделиться» → «На экран „Домой“». После первого открытия тренажёр работает без интернета."
+    :"В меню браузера выберите «Установить приложение» или «Добавить на главный экран». После первого открытия тренажёр работает без интернета.";
+  return `<div class="field"><span class="small" style="font-weight:700">Приложение на телефоне</span>
+    ${installEvt&&!standalone?`<button type="button" class="btn ghost block" id="inst">Установить приложение</button>`:""}<div class="small muted">${hint}</div></div>`;
+}
+
 // ---------- settings ----------
 function openSettings(){
   const bg=document.createElement("div"); bg.className="sheet-bg";
@@ -1276,6 +1299,7 @@ function openSettings(){
       <div class="row"><button type="button" class="btn ghost" id="exp">Экспорт</button><button type="button" class="btn ghost" id="imp">Импорт</button></div>
       <input type="file" id="impFile" accept=".json,application/json" hidden>
       <div id="impZone" class="small muted">${syncOn?"Прогресс сохраняется в вашем аккаунте Claude и одинаков на телефоне и компьютере. Файл — запасная копия.":"Прогресс хранится только в этом браузере. Сохраните копию, чтобы не потерять его или перенести на другое устройство."}${lastBackup()?` Последняя копия: ${new Date(lastBackup()).toLocaleDateString("ru-RU")}.`:""}</div></div>
+    ${IS_WEB?installField():""}
     <div id="resetZone"><button class="btn ghost block" id="reset" style="color:var(--bad)">Сбросить весь прогресс</button></div></div>`;
   document.body.appendChild(bg);
   const close=()=>{ bg.remove(); render(); };
@@ -1285,6 +1309,8 @@ function openSettings(){
     const k=sg.dataset.seg; S.set[k]=isNaN(+b.dataset.v)?b.dataset.v:+b.dataset.v; S.st=Date.now(); persist();
     sg.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b)); });
   bg.querySelector("#exp").onclick=exportProgress;
+  const ib=bg.querySelector("#inst");
+  if(ib) ib.onclick=async()=>{ installEvt.prompt(); const {outcome}=await installEvt.userChoice; installEvt=null; close(); toast(outcome==="accepted"?"Приложение установлено":"Установка отменена"); };
   const file=bg.querySelector("#impFile"), zone=bg.querySelector("#impZone");
   bg.querySelector("#imp").onclick=()=>file.click();
   file.onchange=async()=>{
