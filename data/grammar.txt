@@ -1,0 +1,338 @@
+// @ id | группа | значок | название | по-русски
+// rule: правило (**жирный**) / table: и row: таблица / e: пример ;; перевод / tip: важно
+// q: предложение с ___ (подсказка) | ответ || другой верный ответ | почему
+
+@ modals | Модальность и условия | MV | Modal verbs: obligation and advice | Модальные: долг, запрет, совет
+rule: **must** — необходимость, которую чувствует сам говорящий, или правило от него: I must call Mum.
+rule: **have to** — необходимость извне (правила, обстоятельства): I have to wear a uniform at work.
+rule: **mustn't** — запрет; **don't have to / needn't** — нет необходимости (можно, но не обязательно).
+rule: **should / ought to** — совет; **had better** — настойчивый совет с намёком на последствия: You'd better hurry.
+rule: Прошлое: must → **had to**; **should have done** — «надо было (а ты не сделал)»; **needn't have done** — сделал, хотя было не нужно.
+table: Значение | Настоящее | Прошлое
+row: Необходимость | must / have to | had to
+row: Нет необходимости | don't have to / needn't | didn't have to / needn't have done
+row: Запрет | mustn't / can't | couldn't / wasn't allowed to
+row: Совет, упрёк | should / ought to | should have done
+e: You mustn't park here — it's a fire exit. ;; Здесь нельзя парковаться — это пожарный выход.
+e: You don't have to come if you're busy. ;; Можешь не приходить, если занят.
+e: You should have told me earlier. ;; Надо было сказать мне раньше.
+e: We needn't have taken a taxi — the station was close. ;; Зря мы взяли такси — вокзал был рядом.
+tip: **mustn't ≠ don't have to**: «You mustn't tell him» — нельзя говорить; «You don't have to tell him» — можно не говорить.
+q: You ___ smoke in the hospital — it's strictly forbidden. (запрет) | mustn't || must not | Запрет — **mustn't**; don't have to значило бы «не обязательно».
+q: It's Sunday tomorrow, so I ___ get up early. (нет необходимости) | don't have to || do not have to || needn't || need not | Нет необходимости — **don't have to / needn't**.
+q: Last year I ___ work every Saturday. (необходимость в прошлом) | had to | У must нет прошедшего времени — **had to**.
+q: You look exhausted. You ___ go to bed earlier. (совет) | should || ought to | Совет — **should / ought to**.
+q: You'd ___ leave now, or you'll miss the last train. | better | **had better** — настойчивый совет с последствиями.
+q: You ___ have told me about the party! Now I've got nothing to wear. (упрёк) | should || ought to | Упрёк о прошлом — **should have done**.
+q: We ___ have bought so much food — half of it went off. (сделали зря) | needn't || need not | **needn't have done** — сделали, хотя не было нужно.
+q: Students ___ use their phones during the exam. (не разрешено) | aren't allowed to || are not allowed to || mustn't || must not || can't || cannot | Запрет по правилам: **aren't allowed to / mustn't / can't**.
+q: Do we ___ to bring our own towels, or are they provided? | have | Вопрос о необходимости: **Do we have to…?**
+q: I ___ remember to call the bank tomorrow — it's really important. (моя необходимость) | must | Необходимость, которую чувствует сам говорящий, — **must**.
+
+@ deduction | Модальность и условия | MD | Modals of deduction | Модальные: уверенность и догадки
+rule: Уверенность «наверняка»: **must** + глагол; о прошлом — **must have done**.
+rule: Возможность: **might / may / could** (о прошлом — + have done).
+rule: Уверенность «не может быть»: **can't / couldn't** (+ have done). Не *mustn't* в этом значении!
+table: Уверенность | Настоящее | Прошлое
+row: Наверняка да | must be / must be doing | must have done
+row: Возможно | might / may / could be | might / may / could have done
+row: Наверняка нет | can't / couldn't be | can't / couldn't have done
+e: The lights are on — they must be at home. ;; Свет горит — они наверняка дома.
+e: She might have missed the bus. ;; Возможно, она опоздала на автобус.
+e: He can't have finished already — he only started an hour ago. ;; Не может быть, что он уже закончил — он начал всего час назад.
+tip: Логическое «не может быть» — **can't**: «He can't be serious» (не может быть, что он всерьёз), а не *mustn't.
+q: She's been working for twelve hours. She ___ be exhausted. (наверняка) | must | Логический вывод «наверняка» — **must**.
+q: That ___ be John at the door — he's in Spain this week. (точно нет) | can't || cannot || couldn't || could not | Невозможность — **can't**, не mustn't.
+q: I'm not sure where Tom is. He ___ be in the library. (возможно) | might || may || could | Предположение — **might / may / could**.
+q: The ground is wet. It ___ have rained during the night. (наверняка) | must | Вывод о прошлом — **must have done**.
+q: She ___ have seen us — she didn't even look our way. (точно нет) | can't || cannot || couldn't || could not | **can't / couldn't have done** — уверенность, что не было.
+q: I can't find my keys. I ___ have left them at work. (возможно) | might || may || could | Возможность в прошлом — **might / may / could have done**.
+q: They've just bought a new house and a new car. They ___ be very rich. (наверняка) | must | Вывод из фактов — **must**.
+q: He's never late, so he ___ have forgotten about the meeting. (единственное объяснение) | must | Уверенный вывод о прошлом — **must have done**.
+q: "Whose bag is this?" — "It ___ be Anna's. She was sitting here." (наверняка) | must | **must** — вывод из того, что видим.
+q: The film ___ have been very good — everyone left before the end. (точно нет) | can't || cannot || couldn't || could not | **can't have been** — уверенность, что не был.
+
+@ conditionals | Модальность и условия | IF | Conditionals | Условные предложения
+rule: **Zero**: if + Present, Present — всегда верно: If you heat ice, it melts.
+rule: **First**: if + Present, will — реальное будущее: If it rains, we'll stay in.
+rule: **Second**: if + Past, would — нереальное сейчас: If I had more time, I would travel. (If I **were** you…)
+rule: **Third**: if + Past Perfect, would have done — нереальное прошлое: If I had known, I would have helped.
+rule: **Mixed**: условие в прошлом → результат сейчас: If I had studied medicine, I would be a doctor now.
+rule: **unless** = if not; **provided / as long as** = при условии, что. После них для будущего — настоящее время.
+table: Тип | Условие | Результат
+row: 0 | if + Present Simple | Present Simple
+row: 1 | if + Present Simple | will + V
+row: 2 | if + Past Simple | would + V
+row: 3 | if + Past Perfect | would have + V3
+row: Mixed | if + Past Perfect | would + V
+e: If I were you, I'd accept the offer. ;; На твоём месте я бы принял предложение.
+e: If she had left earlier, she wouldn't have missed the train. ;; Если бы она вышла раньше, она бы не опоздала на поезд.
+e: You can borrow my car as long as you drive carefully. ;; Можешь взять мою машину, если будешь водить аккуратно.
+tip: После **if** в первом типе не ставят will: «If it **rains**», а не *if it will rain.
+q: If it ___ tomorrow, we'll cancel the picnic. (rain) | rains | Первый тип: после if — **Present Simple**, не will.
+q: If I ___ more money, I would buy a flat in the centre. (have) | had | Второй тип: if + **Past Simple**.
+q: If I ___ you, I'd talk to your manager. (be) | were || was | **If I were you** — устойчиво (was — разговорно).
+q: If we had left on time, we ___ the beginning of the film. (not miss) | wouldn't have missed || would not have missed | Третий тип: **would have + V3**.
+q: If she ___ harder, she would have passed the exam. (study) | had studied || 'd studied | Третий тип: if + **Past Perfect**.
+q: If I had taken that job in London, I ___ there now. (live) | would be living || would live || 'd be living || 'd live | Смешанный тип: прошлое условие → результат сейчас: **would + V**.
+q: ___ you hurry, you'll be late. (если не) | Unless | **unless** = if not.
+q: You can stay out late as ___ as you call me. | long | **as long as** — при условии, что.
+q: If you heat water to 100 degrees, it ___. (boil) | boils | Нулевой тип — общий факт: Present Simple.
+q: What would you do if you ___ the lottery? (win) | won | Второй тип: if + Past Simple.
+
+@ wishes | Модальность и условия | IW | Wishes and regrets | Сожаления: I wish, if only
+rule: **I wish + Past Simple** — сожаление о настоящем: I wish I knew the answer.
+rule: **I wish + Past Perfect** — сожаление о прошлом: I wish I hadn't said that.
+rule: **I wish + would** — раздражение, желание, чтобы кто-то изменил поведение: I wish you would stop talking.
+rule: **If only** — то же, но эмоциональнее. **It's time + Past Simple**: It's time we left. **I'd rather + подлежащее + Past**: I'd rather you didn't smoke here.
+e: I wish I lived closer to the sea. ;; Жаль, что я не живу ближе к морю.
+e: If only I had listened to you! ;; Если бы я только тебя послушал!
+e: I wish the neighbours would turn the music down. ;; Хоть бы соседи сделали музыку потише.
+e: It's time we went home. ;; Пора нам идти домой.
+tip: О себе с would не говорят: не *I wish I would…*, а **I wish I could…**
+q: I wish I ___ how to fix this. (know) | knew | Сожаление о настоящем: **wish + Past Simple**.
+q: I wish I ___ so much last night — I feel terrible. (not eat) | hadn't eaten || had not eaten | О прошлом: **wish + Past Perfect**.
+q: I wish you ___ interrupting me all the time! (stop) | would stop || 'd stop | Раздражение: **wish + would**.
+q: If only I ___ more time to prepare! (have) | had | **If only + Past Simple** — о настоящем.
+q: It's time we ___ home. (go) | went | **It's time + Past Simple**.
+q: I'd rather you ___ tell anyone about this. (не) | didn't || did not | **I'd rather + подлежащее + Past**.
+q: I wish I ___ swim — everyone else is in the pool. (умение) | could | О способности — **could**, не would.
+q: She wishes she ___ to the party; she missed everyone. (go) | had gone || 'd gone | О прошлом — **Past Perfect**.
+q: If only it ___ raining! We want to go out. (stop) | would stop || 'd stop | Желание перемены — **would**.
+q: I wish my flat ___ bigger. (be) | was || were | **wish + were / was** — о настоящем.
+
+@ passive | Глагольные формы | PV | Passive voice | Страдательный залог
+rule: **be + V3** во всех временах: is made, was made, has been made, is being made, will be made.
+rule: Деятель — через **by**, если он важен: The book was written by Orwell.
+rule: С модальными: **can be done, must be done, should have been done**.
+rule: **have something done** — услуга, которую делают для вас: I had my hair cut.
+rule: **It is said that… / He is said to…** — безличный пассив в новостях и официальных текстах.
+table: Время | Актив | Пассив
+row: Present Simple | They clean the room. | The room is cleaned.
+row: Present Continuous | They are cleaning it. | It is being cleaned.
+row: Present Perfect | They have cleaned it. | It has been cleaned.
+row: Past Simple | They cleaned it. | It was cleaned.
+row: Future | They will clean it. | It will be cleaned.
+e: The bridge is being repaired. ;; Мост сейчас ремонтируют.
+e: I'm having my car serviced tomorrow. ;; Завтра мне обслуживают машину.
+e: The suspect is believed to be in France. ;; Считается, что подозреваемый во Франции.
+tip: Continuous в пассиве — **being**: is being built; Perfect — **been**: has been built.
+q: The new bridge ___ next year. (build, будущее) | will be built | Пассив будущего: **will be + V3**.
+q: My bike ___ last night. (steal) | was stolen | Past Simple пассив: **was + V3**.
+q: The road ___ at the moment, so take another route. (repair) | is being repaired | Present Continuous пассив: **is being + V3**.
+q: Three people ___ in the accident so far. (injure) | have been injured | Present Perfect пассив: **have been + V3**.
+q: I ___ my hair cut yesterday. (have) | had | **have something done**: I had my hair cut.
+q: The minister is said ___ resigned. (have) | to have | **is said to have done** — о прошлом.
+q: This form must ___ in black ink. (complete) | be completed | Модальный пассив: **must be + V3**.
+q: The letter should ___ sent last week. (have) | have been | Упрёк в пассиве: **should have been + V3**.
+q: English ___ all over the world. (speak) | is spoken | Present Simple пассив: **is + V3**.
+q: It ___ that the company will close. (believe) | is believed | Безличный пассив: **It is believed that…**
+
+@ reported | Глагольные формы | RS | Reported speech | Косвенная речь
+rule: После прошедшего глагола (said, told) время «сдвигается назад»: am → was, will → would, did / have done → had done.
+rule: Меняются местоимения и указатели: now → then, today → that day, tomorrow → the next day, yesterday → the day before.
+rule: **say** (что-то), **tell** (кому-то): He told me that…, He said that…
+rule: Вопросы: прямой порядок слов, для да/нет — **if / whether**: She asked where I lived.
+rule: Глаголы-отчёты: **advise / remind / warn someone to do**, **suggest doing**, **apologise for doing**, **deny doing**, **refuse to do**.
+e: "I'm tired," she said. → She said she was tired. ;; «Я устала», — сказала она. → Она сказала, что устала.
+e: He asked me where I worked. ;; Он спросил, где я работаю.
+e: She suggested going to the cinema. ;; Она предложила пойти в кино.
+tip: В косвенном вопросе нет do/did и инверсии: «She asked where I lived», не *where did I live.
+q: "I'm busy," she said. → She said that she ___ busy. | was | Сдвиг времени: am → **was**.
+q: "I'll call you," he said. → He said he ___ call me. | would | will → **would**.
+q: "Where do you live?" → She asked me where I ___. | lived | Прямой порядок и сдвиг времени: where I **lived**.
+q: "Did you see the film?" → He asked me ___ I had seen the film. | if || whether | Вопрос да/нет → **if / whether**.
+q: "Don't touch it," she said to me. → She ___ me not to touch it. | told || warned | Приказ: **tell / warn someone not to do**.
+q: "Let's go to the beach." → She suggested ___ to the beach. | going || that we go || that we should go | **suggest doing** (или suggest that we go).
+q: "I didn't take the money." → He denied ___ the money. | taking || having taken | **deny doing**.
+q: He ___ me that he would be late. (say / tell) | told | **tell** + кому: told me.
+q: "I'm sorry I'm late." → She apologised ___ being late. | for | **apologise for doing**.
+q: "We arrived yesterday." → They said they had arrived ___. | the day before || the previous day | yesterday → **the day before / the previous day**.
+
+@ relative | Строение предложения | RC | Relative clauses | Придаточные определительные
+rule: **who** — люди, **which** — предметы, **that** — люди и предметы (только в определяющих), **whose** — чей, **where** — где, **when** — когда.
+rule: Определяющие (defining) — без запятых, нужны для смысла; объектное who/which/that можно опустить: the book (that) I read.
+rule: Неопределяющие (non-defining) — с запятыми, добавляют информацию; **that** нельзя, местоимение не опускается.
+rule: **which** может относиться ко всему предложению: He passed, which surprised everyone.
+rule: С предлогом: the person **to whom** I spoke (формально) / the person I spoke **to** (нейтрально).
+e: The woman who lives next door is a doctor. ;; Женщина, которая живёт по соседству, — врач.
+e: My brother, who lives in Oslo, is visiting us. ;; Мой брат, который живёт в Осло, приезжает к нам.
+e: That's the man whose car was stolen. ;; Это тот человек, у которого угнали машину.
+tip: После запятой не ставят **that**: «My car, which is red…», не *My car, that is red.
+q: The man ___ car was stolen called the police. | whose | Принадлежность — **whose**.
+q: That's the restaurant ___ we had our first date. | where || in which | Место — **where** (in which).
+q: My sister, ___ lives in Paris, is a designer. | who | Неопределяющее о человеке — **who** (не that).
+q: He failed the exam, ___ surprised everyone. | which | **which** относится ко всему предложению.
+q: I'll never forget the day ___ we met. | when || on which || that | Время — **when**.
+q: The laptop ___ I bought last week has already broken. | that || which | Определяющее о предмете — **that / which** (можно и опустить).
+q: Is this the person to ___ you sent the email? | whom | После предлога в формальном стиле — **whom**.
+q: Our flat, ___ we bought in 2020, has doubled in value. | which | Неопределяющее о предмете — **which**.
+q: The reason ___ I called is to invite you to dinner. | why || that | **the reason why**.
+q: Students ___ arrive late will not be admitted. | who || that | Определяющее о людях — **who / that**.
+
+@ gerunds | Глагольные формы | GI | Gerunds and infinitives | Герундий или инфинитив
+rule: После **enjoy, avoid, mind, finish, suggest, consider, admit, deny, keep, can't help, look forward to** — **-ing**.
+rule: После **want, decide, hope, plan, agree, refuse, manage, afford, offer, promise, seem** — **to + V**.
+rule: После предлогов всегда **-ing**: interested in learning, good at cooking, before leaving.
+rule: Меняют смысл: **stop** doing (перестать) / stop to do (остановиться, чтобы); **remember / forget** doing (помнить пережитое) / to do (не забыть сделать); **try** doing (попробовать как способ) / to do (стараться).
+rule: **make / let** + глагол без to: They made me wait. **be used to / get used to** + -ing.
+e: I'm looking forward to seeing you. ;; С нетерпением жду встречи с тобой.
+e: She stopped to buy some water. ;; Она остановилась, чтобы купить воды.
+e: Remember to lock the door. ;; Не забудь запереть дверь.
+tip: В **look forward to** частица to — предлог, поэтому дальше **-ing**: looking forward to hearing from you.
+q: I really enjoy ___ in the mountains. (walk) | walking | После enjoy — **-ing**.
+q: We decided ___ a new car. (buy) | to buy | После decide — **to + V**.
+q: I'm looking forward to ___ you next week. (see) | seeing | look forward **to** + -ing.
+q: He stopped ___ when the doctor warned him about his lungs. (smoke — бросил) | smoking | **stop doing** — перестать.
+q: On the way home I stopped ___ some bread. (buy — чтобы купить) | to buy | **stop to do** — остановиться, чтобы.
+q: Did you remember ___ the door? (lock — не забыл ли) | to lock | **remember to do** — не забыть сделать.
+q: I'll never forget ___ the Pacific for the first time. (see — помню, как видел) | seeing | **forget doing** — о пережитом.
+q: My parents made me ___ my room every Saturday. (clean) | clean | **make** + глагол без to.
+q: She's very good at ___ people feel relaxed. (make) | making | После предлога — **-ing**.
+q: They can't afford ___ on holiday this year. (go) | to go | **afford to do**.
+
+@ participles | Глагольные формы | PC | Participle clauses | Причастные обороты
+rule: **-ing** — одновременное действие или причина: Walking home, I met Tom. Feeling tired, she went to bed.
+rule: **Having + V3** — действие раньше главного: Having finished the report, he went home.
+rule: **V3** — пассивное значение: Built in 1890, the house needs repairs.
+rule: Подлежащее оборота и главного предложения должно совпадать, иначе ошибка (*Walking home, it started to rain).
+rule: Сокращают придаточные: the man **standing** by the door = who is standing; the car **stolen** yesterday = which was stolen.
+e: Not knowing what to do, I called my father. ;; Не зная, что делать, я позвонил отцу.
+e: Having lived in Spain, she speaks Spanish fluently. ;; Поскольку она жила в Испании, она свободно говорит по-испански.
+e: Written in simple English, the book is easy to read. ;; Книга написана простым английским, поэтому читается легко.
+tip: Отрицание ставят перед причастием: **Not having** received a reply, I wrote again.
+q: ___ the door, she realised she had forgotten her keys. (close — одновременно) | Closing | Одновременное действие — **-ing**.
+q: ___ finished his homework, he went out to play. (have — раньше) | Having | Предшествующее действие — **Having + V3**.
+q: ___ in 1889, the Eiffel Tower attracts millions of visitors. (complete — пассив) | Completed | Пассивное значение — **V3**.
+q: ___ knowing the answer, I kept quiet. (отрицание) | Not | Отрицание — **Not** + -ing.
+q: The woman ___ to the manager is my aunt. (talk — которая разговаривает) | talking | who is talking → **talking**.
+q: The letters ___ yesterday haven't arrived. (send — которые отправили) | sent | which were sent → **sent**.
+q: ___ tired, I decided to stay at home. (feel — причина) | Feeling | Причина — **-ing**.
+q: ___ by the noise, the baby started crying. (wake — пассив) | Woken || Awoken | Пассивное значение — **V3**.
+q: ___ lived abroad for years, he found it hard to settle back home. (have) | Having | **Having + V3** — раньше главного.
+q: Anyone ___ to join the club should contact Anna. (wish) | wishing | who wishes → **wishing**.
+
+@ usedto | Глагольные формы | UT | Used to, would, be used to | Used to, would, be/get used to
+rule: **used to + V** — прошлая привычка или состояние, которого больше нет: I used to live in Kyiv.
+rule: **would + V** — только повторяющиеся действия в прошлом (не состояния): Every summer we would go to the sea.
+rule: **be used to + -ing / существительное** — привык: I'm used to getting up early.
+rule: **get used to + -ing** — привыкать: You'll get used to driving on the left.
+rule: Отрицание и вопрос: **didn't use to**, **Did you use to…?**
+e: I used to have long hair. ;; Раньше у меня были длинные волосы.
+e: She isn't used to working at night. ;; Она не привыкла работать по ночам.
+e: It took me months to get used to the cold. ;; Мне понадобились месяцы, чтобы привыкнуть к холоду.
+tip: С состояниями (be, have, live, like) — только **used to**, не would: «I used to like jazz», не *I would like jazz.
+q: When I was a child, I ___ live in a small village. (раньше) | used to | Прошлое состояние — **used to**.
+q: I'm not used to ___ so early. (get up) | getting up | **be used to + -ing**.
+q: Don't worry, you'll soon get used to ___ on the left. (drive) | driving | **get used to + -ing**.
+q: Every Sunday my grandfather ___ take us fishing. (повторялось) | would || used to | Повторяющееся действие — **would / used to**.
+q: Did you ___ to play any sports at school? | use | Вопрос: **Did you use to…?**
+q: I didn't ___ to like coffee, but now I love it. | use | Отрицание: **didn't use to**.
+q: She ___ used to the noise of the city now. (уже привыкла) | is || 's | **is used to** — уже привыкла.
+q: It took him a long time to ___ used to his new job. | get | **get used to** — привыкнуть.
+q: We ___ to have a dog when I was young. | used | **used to have** — прошлое состояние.
+q: I'm used to ___ in a big team. (work) | working | **be used to + -ing**.
+
+@ inversion | Строение предложения | IN | Inversion | Инверсия
+rule: После отрицательных и ограничительных слов в начале предложения — порядок как в вопросе: **Never have I** seen…
+rule: **Not only… but also**: Not only did he lie, but he also stole money.
+rule: **Hardly / Scarcely… when**, **No sooner… than** — «едва… как»: No sooner had I arrived than it started to rain.
+rule: **Only then / Only when / Only after** + инверсия: Only then did I understand.
+rule: **Under no circumstances / On no account / At no time** — категорический запрет или отрицание.
+rule: Условие без if: **Had I known** = If I had known; **Should you need** = If you need; **Were I** = If I were.
+e: Never have I seen such a beautiful sunset. ;; Никогда я не видел такого красивого заката.
+e: Not only is she talented, but she is also hard-working. ;; Она не только талантлива, но и трудолюбива.
+e: Had I known, I would have helped. ;; Если бы я знал, я бы помог.
+tip: Инверсия — признак формального или эмоционального стиля; в разговоре чаще прямой порядок: «I've never seen…».
+q: Never ___ I seen such a mess! (have) | have | Never + **have I** — инверсия.
+q: Not only ___ he late, but he also forgot the tickets. (be) | was | Not only + **was he**.
+q: No sooner ___ we sat down than the phone rang. (have) | had | No sooner + **had we** + V3 … than.
+q: Hardly had I closed my eyes ___ the alarm went off. | when | Hardly… **when**.
+q: Only then ___ I realise how serious the problem was. (do) | did | Only then + **did I** + V.
+q: Under no circumstances ___ you open this door. | should | Under no circumstances + **should you**.
+q: ___ I known about the strike, I would have taken a taxi. (have) | Had | Условие без if: **Had I known** = If I had known.
+q: ___ you need any help, please call me. | Should | **Should you need** = If you need.
+q: Rarely ___ she complain about anything. (do) | does | Rarely + **does she**.
+q: Little ___ they know what was waiting for them. (do) | did | Little + **did they know** — «они и не подозревали».
+
+@ emphasis | Строение предложения | EM | Emphasis and cleft sentences | Выделение: It is… that, What…
+rule: **It is / was… that / who** — выделяет одну часть: It was Tom who broke the window.
+rule: **What… is / was** — выделяет действие или предмет: What I need is a holiday. What she did was call the police.
+rule: **do / does / did** перед глаголом в утверждении — усиление: I do like your dress! He did call — I promise.
+rule: **All… is / The thing… is / The reason (why)… is**: All I want is some sleep. The reason I'm late is the traffic.
+e: It was in Paris that they first met. ;; Именно в Париже они впервые встретились.
+e: What annoys me is his attitude. ;; Меня раздражает именно его отношение.
+e: I did send the email — maybe it's in your spam. ;; Я правда отправил письмо — может, оно в спаме.
+tip: После **What… was** глагол идёт без to или с to: «What he did was (to) leave».
+q: It was my brother ___ found the wallet. | who || that | It was… **who / that**.
+q: ___ I need right now is a cup of tea. | What || All | **What I need is…**
+q: I ___ love this song! (усиление, настоящее) | do | Эмфатическое **do**.
+q: She ___ warn us, but we didn't listen. (усиление, прошлое) | did | Эмфатическое **did** + V.
+q: It ___ in 2015 that I moved to London. (be) | was | It **was**… that…
+q: What she did ___ call the police. (be) | was | What she did **was** call…
+q: All I want ___ a quiet evening. (be) | is | All I want **is**…
+q: The reason ___ I'm calling is to ask a favour. | why || that | **The reason why**…
+q: It's not the money ___ bothers me, it's the time. | that || which | It's… **that** bothers me.
+q: What I like most about this city ___ its parks. (be) | is | What I like… **is**.
+
+@ articles | Артикли, предлоги, связки | AR | Articles | Артикли
+rule: **a / an** — впервые упомянутый, один из многих, профессия: She's a nurse. I saw a dog.
+rule: **the** — уже известный, единственный в своём роде, с превосходной степенью: the sun, the best day, the dog I told you about.
+rule: Без артикля — общие понятия во множественном числе и неисчисляемые: Dogs are loyal. Life is short.
+rule: **the** — с реками, морями, горными цепями, странами-«союзами» (the UK, the USA), музыкальными инструментами (play the piano).
+rule: Без артикля — большинство стран и городов, отдельные горы и озёра, приёмы пищи, go to school / bed / work «по назначению».
+e: I bought a book. The book is about Poland. ;; Я купил книгу. Книга о Польше.
+e: Honesty is the best policy. ;; Честность — лучшая политика.
+e: She went to hospital after the accident. ;; После аварии она попала в больницу.
+tip: **a / an** выбирают по звуку: **an** hour, **an** honest man, но **a** university, **a** European country.
+q: She works as ___ engineer. | an | Профессия — **a / an**; перед гласным звуком — an.
+q: ___ Thames flows through London. | The | Реки — с **the**.
+q: It's ___ best film I've ever seen. | the | Превосходная степень — **the**.
+q: Can you play ___ guitar? | the | Музыкальные инструменты — **the**.
+q: There's ___ university in our town — the only one in the region. | a | Впервые упомянутый; university начинается со звука /j/ — **a**.
+q: He spent a year in ___ USA. | the | Страны-союзы — **the USA, the UK**.
+q: Have you got ___ umbrella I could borrow? | an | Один из многих, гласный звук — **an**.
+q: I'll meet you at ___ station where we arrived yesterday. | the | Уточнённый, известный — **the**.
+q: She's ___ honest person — you can trust her. | an | **an** перед непроизносимым h: an honest.
+q: ___ moon looks huge tonight. | The | Единственный в своём роде — **the**.
+q: What ___ beautiful day! | a | В восклицании What + исчисляемое в ед. ч. — **a**.
+
+@ prepositions | Артикли, предлоги, связки | PR | Dependent prepositions | Предлоги после слов
+rule: Прилагательное + предлог: **good at, interested in, afraid of, keen on, responsible for, aware of, similar to, different from, proud of, fed up with**.
+rule: Глагол + предлог: **depend on, apply for, rely on, succeed in, insist on, apologise for, consist of, belong to, complain about, approve of**.
+rule: Существительное + предлог: **reason for, increase in, solution to, demand for, advantage of, effect on, attitude to / towards**.
+rule: Время: **at** 5 o'clock / at night, **on** Monday / on 5 May, **in** May / in 2020 / in the morning.
+e: She's responsible for the marketing team. ;; Она отвечает за отдел маркетинга.
+e: There has been an increase in prices. ;; Цены выросли.
+e: It depends on the weather. ;; Это зависит от погоды.
+tip: Предлоги не переводят дословно: «зависеть **от**» — depend **on**, «жениться **на**» — marry (без предлога).
+q: She's very interested ___ modern art. | in | interested **in**.
+q: It all depends ___ the price. | on | depend **on**.
+q: I'm fed up ___ waiting for the bus. | with | fed up **with**.
+q: He applied ___ a job at the bank. | for | apply **for** a job.
+q: There has been a sharp increase ___ the number of tourists. | in | increase **in**.
+q: This book is similar ___ the one I read last year. | to | similar **to**.
+q: She insisted ___ paying for dinner. | on | insist **on** doing.
+q: Who is responsible ___ this mess? | for | responsible **for**.
+q: The team consists ___ five engineers. | of | consist **of**.
+q: There's no easy solution ___ this problem. | to | solution **to**.
+
+@ linking | Артикли, предлоги, связки | LK | Linking words | Связки: уступка, цель, причина
+rule: Уступка: **although / even though** + предложение; **despite / in spite of** + существительное или -ing.
+rule: Противопоставление: **however** (новое предложение, после него запятая); **whereas / while** — сравнение двух фактов.
+rule: Цель: **so that** + предложение; **in order to / so as to** + V. Причина: **because of / due to** + существительное; **since / as** + предложение.
+rule: Следствие: **therefore, as a result, consequently**. Условие: **in case** (на случай, если), **provided that**.
+e: Despite feeling ill, she went to work. ;; Несмотря на плохое самочувствие, она пошла на работу.
+e: I'll take an umbrella in case it rains. ;; Возьму зонт на случай дождя.
+e: He saved money so that he could travel. ;; Он копил деньги, чтобы путешествовать.
+tip: **despite** — без of (despite the rain), но **in spite of** the rain. После despite — существительное или -ing, а не целое предложение.
+q: ___ the rain, we went for a walk. (несмотря на) | Despite || In spite of | **despite / in spite of** + существительное.
+q: ___ it was raining, we went for a walk. (хотя) | Although || Though || Even though | **although** + предложение.
+q: Take a jacket ___ it gets cold later. (на случай) | in case | **in case** — на случай, если.
+q: She spoke slowly ___ that everyone could understand. | so | **so that** + предложение — цель.
+q: The flight was cancelled ___ to bad weather. | due | **due to** + существительное.
+q: My brother loves sport, ___ I prefer reading. (а — сравнение) | whereas || while | **whereas / while** — сравнение.
+q: The plan was risky. ___, it worked. (тем не менее) | However || Nevertheless || Still | **However** в начале предложения + запятая.
+q: He left early in order ___ the traffic. (avoid) | to avoid | **in order to + V**.
+q: Despite ___ tired, she finished the report. (be) | being | despite + **-ing**.
+q: Prices rose sharply; ___, many people stopped travelling. (поэтому) | therefore || as a result || consequently | Следствие — **therefore / as a result**.

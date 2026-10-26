@@ -1,0 +1,174 @@
+# Сочетания слов | Collocations
+// [слово] — то, что нужно вписать в карточке «Допишите сочетание»
+// verb + noun
+[make] a decision | принять решение | It took her weeks to make a decision about the job.
+[reach] a decision | прийти к решению | The committee finally reached a decision after a long debate.
+make an [informed] decision | принять обоснованное решение | Read the reviews so that you can make an informed decision.
+[make] an effort | приложить усилие | He made an effort to be polite to everyone.
+[make] a difference | изменить ситуацию к лучшему | Small changes can make a big difference.
+[make] an exception | сделать исключение | We don't usually allow pets, but we'll make an exception.
+[make] a fuss | поднимать шум (из-за пустяка) | Don't make a fuss about such a small thing.
+[make] amends | загладить вину | He tried to make amends for his rude behaviour.
+[make] a complaint | подать жалобу | Several guests made a complaint about the noise.
+[make] arrangements | договориться, организовать | We need to make arrangements for the school trip.
+[make] sense of | разобраться в, понять | I couldn't make sense of the instructions.
+[do] research | проводить исследование | She is doing research on climate change.
+[do] your best | сделать всё возможное | Just do your best and don't worry about the result.
+[do] damage | нанести ущерб | The storm did a lot of damage to the roof.
+[do] someone a favour | оказать услугу | Could you do me a favour and water my plants?
+[take] a risk | пойти на риск | You have to take risks to succeed in business.
+[take] advantage of | воспользоваться (возможностью) | Take advantage of the sale while it lasts.
+[take] part in | принимать участие | Over five hundred runners took part in the race.
+[take] responsibility for | взять на себя ответственность за | The company took responsibility for the error.
+[take] into account | принять во внимание | We must take the weather into account.
+[take] place | состояться, происходить | The meeting will take place on Friday.
+[take] a break | сделать перерыв | Let's take a short break.
+[take] action | принять меры | The government must take action now.
+[take] for granted | принимать как должное | We often take clean water for granted.
+[take] the blame | взять вину на себя | He took the blame for his team's mistake.
+[have] an impact on | оказывать влияние на | Social media has a huge impact on teenagers.
+[have] a go | попробовать (свои силы) | Have a go — it's easier than it looks.
+[have] second thoughts | засомневаться, передумывать | I'm having second thoughts about moving abroad.
+[have] no intention of | не иметь намерения | I have no intention of resigning.
+[give] a speech | выступить с речью | The mayor gave a speech at the opening.
+[give] permission | дать разрешение | Who gave you permission to leave early?
+[give] someone a hand | помочь кому-то | Can you give me a hand with these boxes?
+[give] way | уступить; обрушиться | The old bridge finally gave way under the weight.
+[pay] attention to | обращать внимание на | Pay attention to the details.
+[pay] a visit | нанести визит | We paid a visit to our grandparents on Sunday.
+[pay] someone a compliment | сделать комплимент | He paid her a compliment on her presentation.
+[pay] the price | поплатиться | If you don't revise, you'll pay the price.
+[keep] a promise | сдержать обещание | He always keeps his promises.
+[break] a promise | нарушить обещание | Never break a promise to a child.
+[keep] a secret | хранить секрет | Can you keep a secret?
+[keep] in touch | поддерживать связь | Let's keep in touch after graduation.
+[lose] touch | потерять связь | We lost touch after school.
+[keep] track of | следить за, вести учёт | It's hard to keep track of all my expenses.
+[catch] someone's attention | привлечь чьё-то внимание | The bright poster caught my attention.
+[break] the news | сообщить (плохую) новость | Who is going to break the news to her?
+[break] the ice | растопить лёд в общении | A joke helped to break the ice.
+[break] the law | нарушить закон | He broke the law by driving without a licence.
+[break] a record | побить рекорд | She broke the world record last year.
+[raise] awareness | повышать осведомлённость | The campaign aims to raise awareness of mental health.
+[raise] a question | поднять вопрос | The report raises serious questions.
+[raise] money | собирать деньги | They raised money for the local hospital.
+[meet] the requirements | соответствовать требованиям | Unfortunately, you don't meet the requirements.
+[meet] expectations | соответствовать ожиданиям | The film didn't meet my expectations.
+[run] a business | вести бизнес | She runs a small business from home.
+[run] the risk of | рисковать (чем-то) | You run the risk of losing everything.
+[draw] a conclusion | сделать вывод | It's too early to draw any conclusions.
+[draw] attention to | привлечь внимание к | The article drew attention to the problem.
+[hold] a meeting | провести собрание | We hold a meeting every Monday.
+[hold] someone responsible | считать кого-то ответственным | Parents were held responsible for the damage.
+[set] an example | подавать пример | Teachers should set a good example.
+[set] a goal | поставить цель | It's important to set realistic goals.
+[save] time | экономить время | Online shopping saves a lot of time.
+[waste] time | тратить время впустую | Stop wasting time on your phone.
+[come] to the conclusion | прийти к выводу | We came to the conclusion that the plan wouldn't work.
+[come] into force | вступить в силу | The new law comes into force in January.
+[bear] in mind | иметь в виду, учитывать | Bear in mind that the shop closes early on Sundays.
+[jump] to conclusions | делать поспешные выводы | Don't jump to conclusions before you hear the whole story.
+[face] a challenge | столкнуться с трудностью | Schools face a huge challenge this year.
+[miss] an opportunity | упустить возможность | Don't miss this opportunity.
+[seize] the opportunity | ухватиться за возможность | She seized the opportunity to study abroad.
+[gain] experience | получить опыт | Volunteering helps young people gain experience.
+[commit] a crime | совершить преступление | He committed a crime that he later regretted.
+[launch] an investigation | начать расследование | The police launched an investigation into the fire.
+[reach] an agreement | достичь соглашения | The two sides finally reached an agreement.
+[strike] a balance | найти баланс | It's hard to strike a balance between work and family.
+[pose] a threat | представлять угрозу | Plastic poses a serious threat to marine life.
+[play] a role | играть роль | Diet plays a key role in good health.
+[voice] concerns | выражать опасения | Parents voiced concerns about the new rules.
+[address] an issue | заняться проблемой | The government must address this issue urgently.
+[run] out of patience | потерять терпение | The teacher finally ran out of patience.
+[undergo] surgery | перенести операцию | He underwent surgery last week.
+[follow] someone's advice | последовать чьему-то совету | I followed my doctor's advice and rested.
+[express] an opinion | высказать мнение | Everyone has the right to express an opinion.
+[conduct] a survey | провести опрос | We conducted a survey of five hundred students.
+[fulfil] a dream | осуществить мечту | She fulfilled her dream of becoming a pilot.
+[achieve] a goal | достичь цели | You'll achieve your goals if you keep going.
+[overcome] an obstacle | преодолеть препятствие | He overcame many obstacles on the way to success.
+// adjective + noun
+[heavy] rain | сильный дождь | Heavy rain caused flooding in the city centre.
+[heavy] traffic | плотное движение | We were stuck in heavy traffic for an hour.
+[strong] coffee | крепкий кофе | I need a cup of strong coffee.
+[strong] accent | сильный акцент | He speaks with a strong Scottish accent.
+[high] expectations | большие ожидания | Parents often have high expectations of their children.
+[bitter] disappointment | горькое разочарование | The defeat was a bitter disappointment.
+[deep] regret | глубокое сожаление | It is with deep regret that we announce his death.
+[vast] majority | подавляющее большинство | The vast majority of people agree.
+[narrow] escape | чудом избежать беды | We had a narrow escape when the tree fell.
+[close] friend | близкий друг | She is one of my closest friends.
+[fierce] competition | жёсткая конкуренция | There is fierce competition for these jobs.
+[serious] injury | серьёзная травма | He suffered a serious injury in the crash.
+[mild] symptoms | лёгкие симптомы | Most patients have only mild symptoms.
+[common] sense | здравый смысл | Use your common sense.
+[golden] opportunity | прекрасная возможность | This is a golden opportunity to change your life.
+[broad] range | широкий выбор | We offer a broad range of courses.
+[rough] idea | примерное представление | Can you give me a rough idea of the cost?
+[sharp] increase | резкий рост | There has been a sharp increase in prices.
+[steady] growth | устойчивый рост | The company has seen steady growth.
+[slight] chance | небольшой шанс | There's a slight chance of rain tomorrow.
+[tough] decision | трудное решение | It was a tough decision to leave my home town.
+[hard] evidence | неопровержимые доказательства | There is no hard evidence against him.
+[valid] point | справедливое замечание | You make a valid point.
+[heated] debate | горячий спор | The plan sparked a heated debate.
+[utter] nonsense | полная чепуха | What he said was utter nonsense.
+// adverb + adjective / verb
+[fast] asleep | крепко спит | The baby is fast asleep.
+[wide] awake | совершенно не сонный | I was wide awake at three in the morning.
+[bitterly] cold | ужасно холодно | It was bitterly cold outside.
+[highly] recommended | очень рекомендуется | The book is highly recommended.
+[deeply] concerned | глубоко обеспокоен | We are deeply concerned about the situation.
+[fully] aware | полностью отдаёт себе отчёт | I'm fully aware of the risks.
+[painfully] slow | мучительно медленный | The internet was painfully slow.
+[seriously] ill | тяжело болен | His father is seriously ill.
+[perfectly] normal | совершенно нормально | It's perfectly normal to feel nervous.
+[strongly] disagree | категорически не согласен | I strongly disagree with that idea.
+[bitterly] disappointed | крайне разочарован | The fans were bitterly disappointed.
+[ridiculously] expensive | до смешного дорогой | The tickets were ridiculously expensive.
+[thoroughly] enjoy | получить огромное удовольствие | We thoroughly enjoyed the concert.
+[sincerely] apologise | искренне извиняться | I sincerely apologise for the delay.
+[vaguely] remember | смутно помнить | I vaguely remember meeting him.
+[deeply] regret | глубоко сожалеть | I deeply regret what I said.
+[badly] damaged | сильно повреждён | The car was badly damaged.
+[widely] used | широко используется | English is widely used in science.
+// prepositional phrases
+a [matter] of time | вопрос времени | It's only a matter of time before they find out.
+a [waste] of money | пустая трата денег | That gadget was a complete waste of money.
+a [lack] of | нехватка, отсутствие | There is a lack of evidence.
+in the [long] run | в долгосрочной перспективе | It will pay off in the long run.
+at first [sight] | с первого взгляда | It was love at first sight.
+on [purpose] | нарочно | He broke it on purpose.
+by [accident] | случайно | I deleted the file by accident.
+out of the [question] | исключено | A pay rise is out of the question.
+under [pressure] | под давлением | She works well under pressure.
+at [risk] | под угрозой | Thousands of jobs are at risk.
+beyond [repair] | не подлежит ремонту | The old phone is beyond repair.
+for the time [being] | пока что, на данный момент | I'll stay here for the time being.
+in [advance] | заранее | Book your tickets in advance.
+at short [notice] | в последний момент, без предупреждения | The meeting was cancelled at short notice.
+on [behalf] of | от имени | I'm writing on behalf of my company.
+in [terms] of | с точки зрения | In terms of price, it's the best option.
+with [regard] to | относительно, касательно | I am writing with regard to your advertisement.
+as a [matter] of fact | на самом деле | As a matter of fact, I've never been there.
+by no [means] | вовсе не, ни в коем случае | It is by no means easy.
+in the [meantime] | тем временем | In the meantime, please wait here.
+// phrases for writing
+it is [worth] mentioning | стоит упомянуть | It is worth mentioning that the course is free.
+on the [whole] | в целом | On the whole, the trip was a success.
+last but not [least] | последнее по порядку, но не по значению | Last but not least, I'd like to thank my family.
+I am writing to [complain] about | пишу, чтобы пожаловаться на | I am writing to complain about the service I received.
+I look forward to [hearing] from you | с нетерпением жду ответа | I look forward to hearing from you soon.
+please find [attached] | во вложении (прилагаю) | Please find attached my CV.
+I would be [grateful] if | был бы признателен, если | I would be grateful if you could reply by Friday.
+feel [free] to | не стесняйтесь | Feel free to contact me if you have any questions.
+it goes without [saying] | само собой разумеется | It goes without saying that safety comes first.
+there is no [doubt] that | нет сомнений, что | There is no doubt that technology helps us.
+what's [more] | более того | The flat is spacious. What's more, it's cheap.
+not to [mention] | не говоря уже о | It's expensive, not to mention slow.
+as [far] as I'm concerned | что касается меня | As far as I'm concerned, it's a great idea.
+having [said] that | тем не менее, при этом | It's expensive. Having said that, it's worth every penny.
+all things [considered] | учитывая всё | All things considered, it was a good year.
+when it [comes] to | когда дело касается | When it comes to cooking, he's an expert.
+by and [large] | в общем и целом | By and large, the results were positive.

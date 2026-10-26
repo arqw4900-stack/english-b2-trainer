@@ -1,0 +1,272 @@
+// @ id | вид текста | группа (formal/informal/essay/article/report) | регистр (off/semi/neu/inf) | слов от-до | название | по-русски
+// task: задание по-английски / ru: задание по-русски / pt: что должно быть в тексте
+// ph: полезная фраза | перевод / m: абзац образца (\n — новая строка)
+
+@ complaint | Жалоба | formal | off | 140-200 | Complaint about an online order | Жалоба на интернет-заказ
+task: You ordered a pair of waterproof hiking boots online. They arrived late, in the wrong size, and they are not waterproof. Customer service has not replied to your emails. Write an email of complaint: describe the problems, say what you have already done and what you expect the company to do.
+ru: Вы заказали непромокаемые ботинки: пришли поздно, не того размера и промокают, а поддержка молчит. Напишите жалобу: проблемы, что вы уже сделали и чего ждёте от компании.
+pt: Что, когда и где заказано (номер заказа)
+pt: Все проблемы по порядку
+pt: Что вы уже предприняли
+pt: Чёткое требование и срок
+ph: I am writing to complain about… | Пишу, чтобы пожаловаться на…
+ph: What is more, … | Более того, …
+ph: I find this extremely disappointing. | Меня это крайне разочаровывает.
+ph: I would be grateful if you could… | Был бы признателен, если бы вы…
+ph: I will have no choice but to take the matter further. | Мне придётся предпринять дальнейшие шаги.
+m: Dear Sir or Madam,
+m: I am writing to complain about an order I placed on your website on 3 March (order number 58214).
+m: I ordered a pair of hiking boots, which were advertised as waterproof and available for delivery within three working days. However, the parcel arrived ten days later, and the boots were the wrong size. What is more, after a short walk in the rain my feet were completely wet, which suggests that the boots are not waterproof at all.
+m: I have contacted your customer service twice by email, but I have not received any reply, which I find extremely disappointing.
+m: I would therefore be grateful if you could arrange for the boots to be collected and refund the full price of £120, including the delivery charge. If I do not hear from you within fourteen days, I will have no choice but to take the matter further.
+m: I look forward to your prompt reply.
+m: Yours faithfully,\nAnna Petrova
+
+@ enquiry | Запрос информации | formal | off | 120-180 | Asking about a language course | Запрос о языковом курсе
+task: You want to take an intensive English course in the UK this summer. Write an email to the language school asking about dates and available places, group size and timetable, accommodation, and the certificate at the end of the course.
+ru: Напишите в языковую школу: спросите о свободных местах, размере группы и расписании, проживании и сертификате.
+pt: Цель письма в первом предложении
+pt: 3–4 вопроса, сгруппированные по темам
+pt: Вежливые косвенные вопросы (could you tell me…)
+pt: Официальная концовка
+ph: I am writing to enquire about… | Пишу, чтобы узнать о…
+ph: Could you tell me whether…? | Не могли бы вы сказать, …ли…?
+ph: I would also like to know… | Я бы также хотел знать…
+ph: Thank you in advance for your help. | Заранее благодарю за помощь.
+ph: I look forward to hearing from you. | С нетерпением жду ответа.
+m: Dear Sir or Madam,
+m: I am writing to enquire about the intensive English course advertised on your website, which I am interested in taking this summer.
+m: First of all, could you tell me whether there are still places available in July? I would also like to know how many students there are in each group and how many hours of lessons there are per week.
+m: In addition, I would be grateful if you could give me some information about accommodation. Is it possible to stay with a host family, and if so, how much does it cost per week?
+m: Finally, I would like to ask whether the course ends with an exam and whether students receive a certificate.
+m: Thank you in advance for your help. I look forward to hearing from you.
+m: Yours faithfully,\nDmitry Ivanov
+
+@ cover | Сопроводительное письмо | formal | off | 150-220 | Application for a summer job | Отклик на летнюю работу
+task: You have seen an advertisement for activity leaders at an international summer camp for children. Write a letter of application: explain why you are interested, describe your relevant experience and skills, and say when you are available.
+ru: Отклик на вакансию вожатого в международном летнем лагере: почему вам интересно, опыт и навыки, когда вы свободны.
+pt: Какую вакансию и где вы увидели
+pt: Подходящий опыт с конкретными примерами
+pt: Личные качества и навыки (языки, спорт, первая помощь)
+pt: Доступность и готовность к собеседованию
+ph: I am writing to apply for the position of… | Пишу, чтобы откликнуться на вакансию…
+ph: I believe I have the right experience for this job. | Считаю, что у меня подходящий опыт для этой работы.
+ph: This taught me how to… | Это научило меня…
+ph: I would be happy to attend an interview at any time convenient to you. | С удовольствием приду на собеседование в любое удобное для вас время.
+ph: Yours sincerely, | С уважением (если знаете имя адресата)
+m: Dear Ms Harris,
+m: I am writing to apply for the position of activity leader at Sunshine Summer Camp, which I saw advertised on your website.
+m: I am a 20-year-old student of education, and I believe I have the right experience and personality for this job. Last summer I worked as a volunteer at a children's sports club, where I organised games and supervised groups of up to fifteen children. This taught me how to stay calm, solve conflicts and keep children safe while making sure they have fun.
+m: I am an outgoing and energetic person, and I am good at sports, especially swimming and volleyball. I also have a first aid certificate, which I think would be useful at a camp.
+m: As for languages, I speak Russian and English fluently, and I am currently learning Spanish, so I would feel comfortable working with children from different countries.
+m: I am available from June to the end of August, and I would be happy to attend an interview at any time convenient to you.
+m: Yours sincerely,\nOlga Smirnova
+
+@ apology | Письмо с извинением | formal | semi | 130-190 | Apologising for a missed meeting | Извинение за пропущенную встречу
+task: You missed an important meeting with a client yesterday. Write an email to your manager, Mr Brown: apologise, explain what happened, say what you have already done to fix the situation and suggest what you can do next.
+ru: Вы пропустили встречу с клиентом. Напишите руководителю: извинитесь, объясните причину, что уже сделали и что предлагаете дальше.
+pt: Извинение и понимание последствий
+pt: Объяснение без оправданий
+pt: Что вы уже сделали
+pt: Предложение на будущее
+ph: I am writing to apologise for… | Пишу, чтобы извиниться за…
+ph: I realise how important… was. | Понимаю, насколько важна была…
+ph: I should have… | Мне следовало…
+ph: I will make sure this does not happen again. | Я позабочусь о том, чтобы это не повторилось.
+ph: If it would be helpful, I could… | Если это будет полезно, я мог бы…
+m: Subject: Yesterday's meeting with Greenfield Ltd
+m: Dear Mr Brown,
+m: I am writing to apologise for missing yesterday's meeting with Greenfield Ltd. I realise how important it was, and I am very sorry for the inconvenience I caused.
+m: Unfortunately, my train was cancelled because of a signal failure, and I was stuck for nearly two hours without a phone signal, so I was unable to let you know. I should have left earlier, and I will make sure this does not happen again.
+m: This morning I called Ms Lee from Greenfield to apologise personally, and she has kindly agreed to meet us next Tuesday. I have also sent her our presentation so that she can look at it beforehand.
+m: If it would be helpful, I could prepare a short summary of the proposal for you before the meeting.
+m: Once again, I apologise for the situation.
+m: Kind regards,\nIvan Sokolov
+
+@ friend | Неформальное письмо | informal | inf | 140-190 | Advice to a friend visiting your city | Советы другу, который едет в ваш город
+task: Your English friend Tom is coming to visit your city in May and has asked for advice. Write an email: suggest what he should see and do, explain how to get around, and tell him what to bring.
+ru: Друг едет в ваш город в мае и просит совета: что посмотреть, как передвигаться, что взять с собой.
+pt: Тёплое неформальное начало
+pt: 2–3 совета, что посмотреть и сделать
+pt: Как передвигаться по городу
+pt: Что взять с собой и неформальная концовка
+ph: Great to hear from you! | Рад тебя слышать!
+ph: If you're into…, … is definitely worth a visit. | Если ты любишь…, … точно стоит посетить.
+ph: I'd recommend… | Я бы посоветовал…
+ph: Oh, and one more thing — … | И ещё кое-что — …
+ph: Can't wait to see you! | Не терпится тебя увидеть!
+m: Hi Tom,
+m: Great to hear from you! I'm so glad you're finally coming to visit — you're going to love it here.
+m: You asked what to do while you're in town, so here are a few ideas. First of all, don't miss the old town. It's quite small, so you can easily walk around it in a couple of hours, and there are loads of cosy cafés where you can try the local cakes. If you're into history, the castle museum is definitely worth a visit.
+m: As for getting around, I'd recommend buying a weekly travel card. It's much cheaper than paying for each journey, and the trams run all night at weekends.
+m: Oh, and one more thing — bring a warm jacket! It can get really cold in the evenings, even in May.
+m: Let me know when your flight lands and I'll pick you up from the airport. Can't wait to see you!
+m: Best wishes,\nMasha
+
+@ thanks | Письмо-благодарность | informal | inf | 130-190 | Thank-you email after a visit | Благодарность после поездки к друзьям
+task: You have just come back from a week with your English friend's family. Write an email to your friend: thank the family, say what you enjoyed most, mention something funny or memorable, and invite your friend to visit you.
+ru: Вы вернулись из гостей у английской семьи друга. Поблагодарите, расскажите, что больше всего понравилось, вспомните смешной момент и пригласите в гости.
+pt: Благодарность
+pt: Что понравилось больше всего (с подробностями)
+pt: Смешной или запоминающийся случай
+pt: Приглашение в ответ
+ph: I just wanted to say a huge thank you for… | Хотел сказать огромное спасибо за…
+ph: The best part for me was… | Лучшим для меня было…
+ph: I'm still laughing about… | Я до сих пор смеюсь над…
+ph: You must come and visit us… | Обязательно приезжай к нам…
+ph: Thanks again for everything! | Ещё раз спасибо за всё!
+m: Hi Emma,
+m: I just wanted to say a huge thank you to you and your family for having me last week. I had an amazing time, and I still can't believe how quickly the week went by!
+m: The best part for me was definitely our trip to the seaside. I'd never seen such beautiful cliffs, and the fish and chips on the beach were delicious, even if the seagulls tried to steal them! Please tell your dad that I'm still laughing about his attempt to teach me cricket — I think I need a few more lessons.
+m: I also really appreciated how patient everyone was with my English. I feel much more confident now, especially when I speak on the phone.
+m: You must come and visit us next summer. My parents would love to meet you, and I'll show you all my favourite places in the city.
+m: Thanks again for everything!
+m: Lots of love,\nKatya
+
+@ volunteer | Эссе-мнение | essay | neu | 180-240 | Should every young person do voluntary work? | Эссе: должна ли молодёжь быть волонтёрами?
+task: In your English class you have been talking about young people and volunteering. Write an essay: "Every young person should do some voluntary work." Do you agree? Write about: 1) skills and experience, 2) time for studies, 3) your own idea.
+ru: Эссе-мнение: «Каждый молодой человек должен заниматься волонтёрством». Согласны ли вы? Пункты: навыки и опыт, время на учёбу и ваша собственная идея.
+pt: Вступление с вашей позицией
+pt: Абзац о навыках и опыте
+pt: Абзац о времени на учёбу (контраргумент)
+pt: Ваша собственная идея и вывод
+ph: Some people believe that…, and I largely agree with this view. | Некоторые считают, что…, и я во многом с этим согласен.
+ph: Firstly, … What is more, … | Во-первых, … Более того, …
+ph: On the other hand, … | С другой стороны, …
+ph: That is why I think… | Именно поэтому я думаю…
+ph: To sum up, … | Подводя итог, …
+m: Nowadays more and more organisations rely on volunteers. Some people believe that every young person should do voluntary work, and I largely agree with this view, although I do not think it should be compulsory.
+m: Firstly, volunteering helps young people develop skills that are difficult to learn at school. Working in a team, dealing with real problems and communicating with people of different ages all build confidence. What is more, this experience looks impressive on a CV and can help when applying for a first job.
+m: On the other hand, many students already have a heavy workload. Preparing for exams takes a lot of time and energy, and forcing them to volunteer could make them feel stressed rather than motivated. That is why I think a few hours a month is a more realistic goal.
+m: Finally, voluntary work can change the way young people see the world. Helping in a hospital or an animal shelter shows them that their actions really matter, and many continue to volunteer for the rest of their lives.
+m: To sum up, I believe young people should be strongly encouraged to volunteer, as long as it does not affect their studies.
+
+@ remote | Эссе «за и против» | essay | neu | 180-240 | Working from home: pros and cons | Удалённая работа: за и против
+task: Write an essay discussing the advantages and disadvantages of working from home. Give your own opinion in the conclusion.
+ru: Эссе «за и против»: плюсы и минусы удалённой работы, ваше мнение в конце.
+pt: Вступление: тема без готового вывода
+pt: Абзац с преимуществами
+pt: Абзац с недостатками
+pt: Ваше мнение и вывод
+ph: While it offers clear benefits, it also has some serious drawbacks. | Хотя у этого есть очевидные плюсы, есть и серьёзные минусы.
+ph: One of the main advantages is… | Одно из главных преимуществ — …
+ph: Moreover, … / In addition, … | Кроме того, …
+ph: However, … is not ideal for everyone. | Однако … подходит не всем.
+ph: All things considered, … | Учитывая всё, …
+m: Since the pandemic, working from home has become normal for millions of people. While it offers clear benefits, it also has some serious drawbacks.
+m: One of the main advantages is the time people save. Without a daily commute, employees can spend more time with their families or simply get more sleep. Moreover, many people find it easier to concentrate at home, away from noisy open-plan offices and constant interruptions. Companies can also save money on office space.
+m: However, working from home is not ideal for everyone. Some people feel isolated and miss the social side of work, such as chatting with colleagues over coffee. In addition, it can be difficult to separate work from private life, especially in a small flat, and many remote workers admit that they end up working longer hours. Young employees may also find it harder to learn from more experienced colleagues.
+m: In my opinion, the best solution is a hybrid model. Spending two or three days at home and the rest in the office allows people to enjoy the flexibility of remote work without losing contact with their team.
+m: All things considered, working from home is here to stay, but it works best in moderation.
+
+@ technology | Эссе-мнение | essay | neu | 180-240 | Has technology made life more complicated? | Эссе: технологии усложнили нам жизнь?
+task: Write an essay: "Technology has made our lives more complicated, not easier." Do you agree? Write about: 1) communication, 2) work, 3) your own idea.
+ru: Эссе-мнение: «Технологии сделали нашу жизнь сложнее, а не проще». Пункты: общение, работа и ваша идея.
+pt: Вступление с позицией
+pt: Абзац об общении
+pt: Абзац о работе
+pt: Ваша идея и вывод
+ph: It is often claimed that… | Часто утверждают, что…
+ph: Although there is some truth in this, … | Хотя в этом есть доля правды, …
+ph: When it comes to… | Когда речь заходит о…
+ph: As far as … is concerned, … | Что касается …, …
+ph: To conclude, … | В заключение, …
+m: It is often claimed that modern technology, rather than making life simpler, has made it more stressful and complicated. Although there is some truth in this, I believe that, on the whole, technology has made our lives easier.
+m: When it comes to communication, smartphones allow us to stay in touch with friends and family wherever they are. It is true that constant notifications can be distracting, but we can always choose to switch them off. The problem lies not in the technology itself but in how we use it.
+m: As far as work is concerned, technology has removed many boring tasks. Software can calculate, translate and organise information in seconds, which gives people more time for creative work. Admittedly, some workers feel they are expected to be available all the time, but this is a question of company culture rather than technology.
+m: Another advantage is access to services. Today we can book a doctor's appointment, pay bills or study online without leaving home, which is especially important for elderly or disabled people.
+m: To conclude, technology can sometimes be overwhelming, but if we use it sensibly, it makes our lives considerably easier.
+
+@ seriesreview | Рецензия | article | semi | 150-210 | Review of a series | Рецензия на сериал
+task: An international website is asking readers for reviews of a film or series they have watched recently. Write a review: briefly describe the story without spoilers, say what you liked and what you didn't like, and say who would enjoy it.
+ru: Рецензия для международного сайта на недавно просмотренный фильм или сериал: сюжет без спойлеров, что понравилось и что нет, кому подойдёт.
+pt: Цепляющее начало и название
+pt: Коротко о сюжете без спойлеров
+pt: Сильные и слабые стороны с примерами
+pt: Кому рекомендуете
+ph: I'd highly recommend… | Очень рекомендую…
+ph: The story follows… | Сюжет рассказывает о…
+ph: What I liked most was… | Больше всего мне понравилось…
+ph: However, the plot becomes a little predictable… | Однако сюжет становится немного предсказуемым…
+ph: It will appeal to anyone who… | Это понравится всем, кто…
+m: If you're looking for something to watch this weekend, I'd highly recommend "The Last Station", a thriller series that kept me on the edge of my seat for six episodes.
+m: The story follows Maya, a young engineer who discovers that the new metro line she helped to design is not as safe as everyone believes. As she tries to warn the public, she finds herself caught up in a dangerous political scandal.
+m: What I liked most was the acting. The lead actress is incredibly convincing, and the supporting characters are far more than just stereotypes. The series is also beautifully filmed, especially the night scenes in the empty tunnels, which are genuinely creepy.
+m: However, the plot becomes a little predictable towards the end, and the final episode felt rushed, as if the writers had run out of time.
+m: Overall, it's a gripping and intelligent series that will appeal to anyone who enjoys suspense with a touch of social criticism. Just don't start it late at night — you won't be able to stop!
+
+@ cafe | Рецензия | article | semi | 140-200 | Review of a café | Рецензия на кафе
+task: Write a review of a café or restaurant in your town for an English-language city guide. Describe the place, the food and the service, and say whether you would recommend it.
+ru: Рецензия на кафе или ресторан для англоязычного путеводителя: обстановка, еда, обслуживание и рекомендация.
+pt: Где находится и какая атмосфера
+pt: Еда с конкретными блюдами
+pt: Обслуживание и цены
+pt: Итоговая рекомендация
+ph: Tucked away in…, … is one of the city's best-kept secrets. | Спрятанное в…, … — одно из лучших тайных мест города.
+ph: The first thing you notice is… | Первое, что бросается в глаза, — …
+ph: It's worth booking a table in advance. | Стоит заранее забронировать столик.
+ph: Prices are reasonable for the quality. | Цены разумные для такого качества.
+ph: All in all, … | В целом, …
+m: Tucked away in a quiet side street near the main square, Café Verde is one of the city's best-kept secrets.
+m: The first thing you notice is the atmosphere. With its wooden tables, plants everywhere and soft jazz in the background, it's the perfect place to relax after a busy day. It can get quite crowded at weekends, though, so it's worth booking a table in advance.
+m: The menu is small but varied, with plenty of vegetarian options. I had the mushroom risotto, which was rich and creamy, and my friend's homemade burger was enormous. For dessert, don't miss the cheesecake — it's absolutely delicious.
+m: The staff are friendly and helpful, although service was a bit slow when we were there. Prices are reasonable for the quality, with most main courses costing around fifteen euros.
+m: All in all, Café Verde is ideal for a relaxed lunch or dinner with friends. I'll definitely be going back.
+
+@ article | Статья | article | semi | 150-210 | Article: the best way to learn a language | Статья: как лучше учить язык
+task: You have seen this announcement in an English-language magazine: "What is the best way to learn a foreign language? Write an article sharing your experience and tips." Write your article.
+ru: Статья в журнал: как лучше всего учить иностранный язык — ваш опыт и советы.
+pt: Заголовок и обращение к читателю
+pt: 2–3 совета на личном опыте
+pt: Живой, но аккуратный стиль
+pt: Запоминающаяся концовка
+ph: Have you ever…? You're not alone. | Вы когда-нибудь…? Вы не одиноки.
+ph: The first thing I did was… | Первое, что я сделал, — …
+ph: At first…, but after a few months… | Сначала…, но через несколько месяцев…
+ph: I soon realised that… | Вскоре я понял, что…
+ph: So, if you want to…, don't just… | Так что, если хотите…, не просто…
+m: Learning a language: forget the textbook!
+m: Have you ever studied a language at school for years and still felt tongue-tied when you met a native speaker? You're not alone. I was in exactly the same situation until I changed my approach.
+m: The first thing I did was make the language part of my daily life. Instead of watching series in Russian, I switched to English with subtitles, and later without them. At first I understood very little, but after a few months I was surprised by how much I could follow.
+m: Secondly, I started speaking as often as possible. I joined an online conversation club, and although I was nervous at the beginning, I soon realised that making mistakes is the only way to improve.
+m: Finally, I learned vocabulary in context rather than as long lists of words. Writing down useful phrases from songs and articles helped me remember them much better.
+m: So, if you want to learn a language, don't just study it — live it!
+
+@ report | Отчёт | report | off | 170-240 | Report on the student canteen | Отчёт о студенческой столовой
+task: The director of your college wants to improve the student canteen. Write a report describing the current situation, explaining the main problems and making recommendations.
+ru: Директор колледжа хочет улучшить столовую. Напишите отчёт: текущее положение, основные проблемы, рекомендации.
+pt: Заголовок и разделы с подзаголовками
+pt: Цель отчёта и источник информации
+pt: Основные проблемы
+pt: Конкретные рекомендации и вывод
+ph: The aim of this report is to… | Цель этого отчёта — …
+ph: The information is based on… | Информация основана на…
+ph: Most students said that… | Большинство студентов сказали, что…
+ph: I would recommend… | Я бы рекомендовал…
+ph: It would also be a good idea to… | Также было бы хорошо…
+m: Report on the student canteen
+m: Introduction\nThe aim of this report is to describe the current situation in the college canteen and to suggest how it could be improved. The information is based on a survey of 120 students.
+m: Current situation\nThe canteen is open from 11 a.m. to 3 p.m. and serves hot meals, sandwiches and drinks. Most students said that the food is reasonably priced and that the staff are friendly.
+m: Main problems\nHowever, the canteen is extremely crowded at lunchtime, and many students have to wait more than twenty minutes to be served. In addition, there is a limited choice of healthy and vegetarian dishes, which was the most common complaint in the survey. Several students also mentioned that the dining area is noisy and uncomfortable.
+m: Recommendations\nI would recommend extending the opening hours so that students can eat at different times. It would also be a good idea to introduce a daily vegetarian option and a salad bar. Finally, replacing some of the old furniture would make the space more pleasant.
+m: Conclusion\nIf these changes are made, the canteen will become a more attractive place to eat and relax.
+
+@ editor | Письмо в газету | formal | semi | 160-230 | Letter to the editor: saving a local park | Письмо в газету: спасти парк
+task: Your local council plans to build a car park on the site of a small park in your neighbourhood. Write a letter to the local newspaper giving your opinion. Include at least two arguments and suggest an alternative.
+ru: Совет района хочет построить парковку на месте маленького парка. Напишите письмо в местную газету: ваше мнение, минимум два аргумента и альтернатива.
+pt: Повод для письма и ваша позиция
+pt: Минимум два аргумента
+pt: Альтернативное решение
+pt: Призыв и концовка
+ph: I am writing in response to your article about… | Пишу в ответ на вашу статью о…
+ph: As a local resident, I strongly oppose… | Как местный житель, я решительно против…
+ph: On the contrary, … | Напротив, …
+ph: Instead of …, the council should… | Вместо того чтобы…, совету следует…
+ph: I hope the council will reconsider… | Надеюсь, что совет пересмотрит…
+m: Dear Editor,
+m: I am writing in response to your article about the council's plan to replace Elm Park with a multi-storey car park. As a local resident, I strongly oppose this decision.
+m: First of all, Elm Park is the only green space in our neighbourhood. Every day it is used by parents with young children, elderly people and dog owners, and it is one of the few places where neighbours actually meet. Losing it would have a serious impact on the quality of life in the area.
+m: Secondly, I do not believe that more parking spaces will solve the traffic problem. On the contrary, they are likely to encourage even more people to drive into the centre, which will mean more congestion and pollution.
+m: Instead of destroying the park, the council should invest in better public transport and a park-and-ride scheme on the edge of town. This would reduce traffic without sacrificing our green spaces.
+m: I hope the council will reconsider its plans before it is too late.
+m: Yours faithfully,\nElena Kuznetsova

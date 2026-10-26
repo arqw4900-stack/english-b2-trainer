@@ -1,0 +1,162 @@
+// Задания с ответом, который пишет сам ученик.
+// tr / fix / gap:  задание | ответ || другой верный ответ | пояснение
+// para / reg:      исходное предложение | что сделать | ответ || ответ | пояснение
+// wf:              предложение с ___ | СЛОВО-ОСНОВА | ответ || ответ | пояснение
+// cont / use:      начало или выражение | задание | образец | на что обратить внимание   (открытые задания)
+// op:              вопрос | образец ответа | на что обратить внимание                    (открытое задание)
+
+tr: Я живу здесь уже пять лет. | I have lived here for five years. || I've lived here for five years. || I have been living here for five years. || I've been living here for five years. | Действие длится до сих пор — **Present Perfect (Continuous)** + for.
+tr: Если бы я знал, я бы тебе сказал. | If I had known, I would have told you. || If I'd known, I'd have told you. || If I had known, I'd have told you. || If I'd known, I would have told you. | Нереальное прошлое — **третий тип**: had known… would have told.
+tr: Он привык работать по ночам. | He is used to working at night. || He's used to working at night. || He is used to working nights. || He's used to working nights. | «Привык» — **be used to + -ing**.
+tr: Мне нужно, чтобы ты мне помог. | I need you to help me. | need **someone to do**, а не *I need that you help.
+tr: Я с нетерпением жду твоего ответа. | I look forward to hearing from you. || I'm looking forward to hearing from you. || I look forward to your reply. || I'm looking forward to your reply. | look forward **to + -ing / существительное**.
+tr: Сколько времени у тебя уходит на дорогу до работы? | How long does it take you to get to work? || How long does it take you to get to the office? | «Уходит времени» — **it takes (someone) + время + to do**.
+tr: Он сказал мне, что опоздает. | He told me he would be late. || He told me that he would be late. || He said he would be late. || He said that he would be late. | Косвенная речь: will → **would**; tell + кому.
+tr: Мне посоветовали не ехать туда ночью. | I was advised not to go there at night. || They advised me not to go there at night. || I was advised not to travel there at night. | advise someone **not to do**; пассив: I was advised.
+tr: Чем больше ты тренируешься, тем лучше у тебя получается. | The more you practise, the better you get. || The more you practice, the better you get. || The more you practise, the better you become. || The more you train, the better you get. | **The more…, the better…**
+tr: Не стоит из-за этого переживать. | It's not worth worrying about. || It's not worth worrying about it. || It isn't worth worrying about. || There's no point worrying about it. | **It's not worth + -ing**.
+tr: Она сделала вид, что не слышит. | She pretended not to hear. || She pretended she didn't hear. || She pretended that she didn't hear. | «Сделать вид» — **pretend (not) to do**.
+tr: Мне починили телефон за час. | I had my phone repaired in an hour. || I had my phone fixed in an hour. || I got my phone repaired in an hour. || I got my phone fixed in an hour. | Услуга — **have / get something done**.
+tr: Я бы предпочёл остаться дома. | I'd rather stay at home. || I would rather stay at home. || I'd prefer to stay at home. || I would prefer to stay at home. || I'd rather stay home. | **would rather + V** или would prefer to do.
+tr: Это зависит от погоды. | It depends on the weather. | depend **on**.
+tr: Он отрицал, что взял деньги. | He denied taking the money. || He denied having taken the money. || He denied that he had taken the money. | **deny + -ing**.
+tr: Не забудь выключить свет. | Don't forget to turn off the light. || Don't forget to switch off the light. || Don't forget to turn the light off. || Remember to turn off the light. || Don't forget to switch the light off. | forget / remember **to do** — не забыть сделать.
+tr: Чем раньше мы начнём, тем лучше. | The sooner we start, the better. || The earlier we start, the better. | **The sooner…, the better.**
+tr: Мне не терпится увидеть новый фильм. | I can't wait to see the new film. || I can't wait to see the new movie. | «Не терпится» — **can't wait to do**.
+tr: Его уволили в прошлом месяце. | He was fired last month. || He got fired last month. || He was sacked last month. || He got the sack last month. | Пассив: **was fired / got the sack**.
+tr: Хотя было поздно, мы продолжили работать. | Although it was late, we carried on working. || Although it was late, we kept working. || Even though it was late, we carried on working. || Although it was late, we continued working. || Although it was late, we kept on working. | **although** + предложение; продолжить — carry on / keep + -ing.
+
+fix: I am living here since 2019. | I have lived here since 2019. || I've lived here since 2019. || I have been living here since 2019. || I've been living here since 2019. | С since о периоде до настоящего — **Present Perfect**, не Present Continuous.
+fix: She explained me the rule. | She explained the rule to me. | **explain something to someone**, а не *explain me.
+fix: I'm agree with you. | I agree with you. | **agree** — глагол: I agree, без am.
+fix: He suggested me to take a taxi. | He suggested taking a taxi. || He suggested that I take a taxi. || He suggested that I should take a taxi. || He suggested I take a taxi. | **suggest + -ing** или suggest that…; конструкции *suggest me to нет.
+fix: I look forward to see you. | I look forward to seeing you. | look forward to **+ -ing**.
+fix: If I will see him, I'll tell him. | If I see him, I'll tell him. | После **if** — Present Simple, не will.
+fix: There is too much people here. | There are too many people here. | people — исчисляемое: **too many people**, there **are**.
+fix: Can you give me an advice? | Can you give me some advice? || Can you give me a piece of advice? || Can you give me advice? | **advice** — неисчисляемое, без an.
+fix: She is married with a doctor. | She is married to a doctor. || She's married to a doctor. | married **to**.
+fix: I didn't went to work yesterday. | I didn't go to work yesterday. | После didn't — **базовая форма** глагола.
+fix: The news are very bad. | The news is very bad. | **news** — неисчисляемое, единственное число.
+fix: He has been working here for 2015. | He has been working here since 2015. || He's been working here since 2015. | **since** + момент, for + период.
+fix: My sister, that lives in Rome, is a teacher. | My sister, who lives in Rome, is a teacher. | После запятой (неопределяющее придаточное) — **who**, не that.
+fix: I'm used to get up early. | I'm used to getting up early. || I am used to getting up early. | **be used to + -ing**.
+fix: Despite it was raining, we went out. | Although it was raining, we went out. || Despite the rain, we went out. || In spite of the rain, we went out. || Despite the fact that it was raining, we went out. | **despite** + существительное / -ing; перед целым предложением — although.
+fix: She's interesting in art. | She's interested in art. || She is interested in art. | **interested** — о чувствах человека, interesting — о предмете.
+fix: I have seen him yesterday. | I saw him yesterday. | С yesterday — **Past Simple**.
+fix: He made me to wait for an hour. | He made me wait for an hour. | **make someone do** — без to.
+fix: Neither of them want to come. | Neither of them wants to come. | **neither of** в нормативном английском — с единственным числом.
+fix: I wish I would be taller. | I wish I were taller. || I wish I was taller. | О себе: **wish + Past** (were), не would.
+
+para: I haven't seen Tom for ages. | Начните: «It's ages…», используйте SINCE | It's ages since I last saw Tom. || It's ages since I saw Tom. || It's been ages since I last saw Tom. || It's been ages since I saw Tom. || It is ages since I last saw Tom. | It's (been) ages **since** + Past Simple.
+para: "I'm sorry I broke the vase," said Tom. | Используйте APOLOGISED | Tom apologised for breaking the vase. || Tom apologised for having broken the vase. || Tom apologized for breaking the vase. | **apologise for + -ing**.
+para: It was such a boring film that I fell asleep. | Начните: «The film…», используйте SO | The film was so boring that I fell asleep. || The film was so boring I fell asleep. | **so + прилагательное**, а such + (a) + существительное.
+para: It's possible that she missed the train. | Используйте MIGHT | She might have missed the train. || She may have missed the train. || She could have missed the train. | Возможность в прошлом — **might have done**.
+para: I regret not studying harder. | Начните: «I wish…» | I wish I had studied harder. || I wish I'd studied harder. | Сожаление о прошлом — **wish + Past Perfect**.
+para: They say he is a millionaire. | Начните: «He is said…» | He is said to be a millionaire. || He's said to be a millionaire. | **is said to + V**.
+para: Someone repaired my car yesterday. | Используйте HAD | I had my car repaired yesterday. || I had my car fixed yesterday. | **have something done**.
+para: She started learning Polish three years ago. | Используйте FOR | She has been learning Polish for three years. || She's been learning Polish for three years. || She has learnt Polish for three years. || She has learned Polish for three years. | Present Perfect (Continuous) + **for**.
+para: We didn't go out because of the storm. | Используйте PREVENTED | The storm prevented us from going out. | **prevent someone from + -ing**.
+para: "Don't forget to lock the door," she told me. | Используйте REMINDED | She reminded me to lock the door. | **remind someone to do**.
+para: It isn't necessary to bring food. | Используйте NEED | You don't need to bring food. || You needn't bring food. || There's no need to bring food. || You don't need to bring any food. | **don't need to / needn't**.
+para: I didn't know about the meeting, so I didn't go. | Начните: «If I had…» | If I had known about the meeting, I would have gone. || If I'd known about the meeting, I'd have gone. || If I had known about the meeting, I'd have gone. || If I had known about the meeting, I would have gone to it. | Третий тип условных.
+para: He is too young to drive. | Используйте ENOUGH | He isn't old enough to drive. || He is not old enough to drive. | not + прилагательное + **enough**.
+para: Although she was tired, she kept working. | Используйте DESPITE | Despite being tired, she kept working. || Despite feeling tired, she kept working. || Despite her tiredness, she kept working. | **despite + -ing / существительное**.
+para: This is the first time I've eaten sushi. | Начните: «I have never…» | I have never eaten sushi before. || I've never eaten sushi before. | the first time → **never… before**.
+para: People believe that the house is haunted. | Начните: «The house…» | The house is believed to be haunted. | **is believed to be**.
+para: It's not worth arguing with him. | Используйте POINT | There's no point arguing with him. || There's no point in arguing with him. || There is no point in arguing with him. || There is no point arguing with him. | **There's no point (in) + -ing**.
+para: I last saw her in 2020. | Используйте SEEN | I haven't seen her since 2020. || I have not seen her since 2020. | Present Perfect + **since**.
+para: "Where do you live?" he asked me. | Начните: «He asked me…» | He asked me where I lived. || He asked me where I live. | Косвенный вопрос — **прямой порядок слов**.
+para: We had never seen such a beautiful view. | Начните: «Never…» | Never had we seen such a beautiful view. || Never before had we seen such a beautiful view. | Инверсия: **Never had we seen**.
+
+reg: Hey, can you send me the stuff by Friday? | Сделайте официальным | Could you please send me the documents by Friday? || I would be grateful if you could send me the documents by Friday. || Could you send me the documents by Friday? || I would appreciate it if you could send me the documents by Friday. | Официально: **Could you…? / I would be grateful if…**; stuff → documents.
+reg: Sorry for the late reply. | Сделайте официальным | I apologise for the delay in replying. || I apologise for my late reply. || Please accept my apologies for the late reply. || I apologise for the late reply. | **I apologise for…** — формально.
+reg: I want to know when the course starts. | Сделайте вежливо-официальным | I would like to know when the course starts. || Could you tell me when the course starts? || I would be grateful if you could tell me when the course starts. || Could you please tell me when the course starts? | want → **would like**; косвенный вопрос.
+reg: The hotel was a total dump. | Сделайте нейтральным (жалоба) | The hotel was in very poor condition. || The hotel was in a very poor condition. || The hotel was extremely dirty and poorly maintained. | dump — сленг; официально: **in poor condition**.
+reg: We regret to inform you that your application has been unsuccessful. | Скажите неформально другу | Sorry, you didn't get the job. || I'm afraid you didn't get the job. || Bad news — you didn't get the job. || Sorry, they turned you down. | Неформально — коротко, без пассива и формул.
+reg: Get back to me ASAP. | Сделайте официальным | I look forward to hearing from you at your earliest convenience. || Please reply as soon as possible. || I would appreciate a prompt reply. || I look forward to your prompt reply. | **at your earliest convenience** — официальная формула.
+reg: Thanks a lot for your help! | Сделайте официальным | Thank you very much for your assistance. || Thank you very much for your help. || I am very grateful for your help. || I am very grateful for your assistance. | Thanks a lot → **Thank you very much**; help → assistance.
+reg: Kids under 12 can't come in. | Сделайте официальным (объявление) | Children under 12 are not admitted. || Children under the age of 12 are not permitted to enter. || Children under 12 are not allowed to enter. || Children under 12 will not be admitted. | Kids → **children**; в объявлениях — пассив.
+reg: I'm afraid I won't be able to attend the meeting. | Скажите неформально коллеге-другу | I can't make the meeting. || I can't make it to the meeting. || Sorry, I can't come to the meeting. || Sorry, I can't make it to the meeting. | Неформально: **can't make it**.
+reg: Loads of people turned up. | Сделайте нейтральным | A large number of people attended. || Many people came. || A lot of people came. || A large number of people came. | loads of, turn up — разговорные.
+reg: Could you possibly tell me where the station is? | Спросите неформально | Where's the station? || Do you know where the station is? || Where is the station? | Неформально — **прямой вопрос**.
+reg: I'd like to complain about the noise. | Начните официальное письмо | I am writing to complain about the noise. || I am writing to make a complaint about the noise. | **I am writing to complain about…**
+
+gap: I've been waiting ___ ages! | for | **for** + период.
+gap: She's the person ___ I told you about. | who || that || whom | Определяющее придаточное о человеке — **who / that**.
+gap: He's not interested ___ politics at all. | in | interested **in**.
+gap: Hardly ___ we arrived when it started to rain. | had | **Hardly had we…** when.
+gap: You should apologise ___ being so rude. | for | apologise **for**.
+gap: It's no use ___ about it now. (cry) | crying | **It's no use + -ing**.
+gap: I'd rather you ___ smoke in here. | didn't | **I'd rather** + подлежащее + Past.
+gap: Not ___ did he lie, but he also stole money. | only | **Not only** did…
+gap: The meeting has been put ___ until next week. | off | **put off** — отложить.
+gap: She succeeded ___ passing the exam. | in | succeed **in** + -ing.
+gap: This is the ___ interesting book I've ever read. | most | Превосходная степень: **the most**.
+gap: If I ___ you, I'd take the job. | were || was | **If I were you**.
+gap: He's used ___ working long hours. | to | **be used to** + -ing.
+gap: We'll go out ___ it stops raining. (как только) | when || once || as soon as | **when / once / as soon as** + Present Simple.
+gap: It's ___ cold to swim today. | too | **too** + прилагательное + to.
+gap: I can't help ___ about her. (think) | thinking | **can't help + -ing**.
+gap: There's no point ___ waiting any longer. | in | **no point in** + -ing.
+gap: They have lived here ___ 2010. | since | **since** + момент в прошлом.
+gap: You'd ___ take an umbrella. | better | **had better**.
+gap: The film was ___ boring that we left early. | so | **so** + прилагательное + that.
+
+wf: Her ___ to help everyone is admirable. | WILLING | willingness | Существительное от прилагательного: **-ness**.
+wf: The ___ of the new bridge took three years. | CONSTRUCT | construction | Существительное от глагола: **-ion**.
+wf: It was ___ of you to leave the door open. | CARE | careless | Отрицательное прилагательное: **-less**.
+wf: He was ___ about the price — it was far too high. | HAPPY | unhappy | Приставка **un-**.
+wf: There has been a significant ___ in crime. | REDUCE | reduction | reduce → **reduction**.
+wf: The hotel staff were extremely ___. | HELP | helpful | Прилагательное: **-ful**.
+wf: Smoking is ___ to your health. | HARM | harmful | harm → **harmful**.
+wf: She gave a very ___ speech that convinced everyone. | PERSUADE | persuasive | persuade → **persuasive**.
+wf: The ___ of the city has grown rapidly. | POPULATE | population | populate → **population**.
+wf: Thank you for your ___. | PATIENT | patience | patient → **patience**.
+wf: The result was completely ___ — nobody saw it coming. | EXPECT | unexpected | **un-** + причастие expected.
+wf: I need some ___ about the course. | INFORM | information | inform → **information** (неисчисляемое).
+wf: Many elderly people suffer from ___. | LONELY | loneliness | lonely → **loneliness**.
+wf: The new manager is very ___ — she makes decisions quickly. | DECIDE | decisive | decide → **decisive**.
+wf: It's ___ to drive without a licence. | LEGAL | illegal | Перед l отрицательная приставка — **il-**.
+wf: The view from the top was absolutely ___. | BREATH | breathtaking | **breathtaking** — захватывающий дух.
+wf: Her ___ in the competition surprised everyone. | SUCCEED | success | succeed → **success**.
+wf: The museum offers free ___ on Sundays. | ADMIT | admission | admit → **admission** (вход).
+wf: He apologised for his ___ behaviour. | RESPONSIBLE | irresponsible | Перед r отрицательная приставка — **ir-**.
+wf: ___, the weather was perfect for the wedding. | FORTUNE | Fortunately | Наречие: fortunate → **fortunately**.
+
+cont: Although social media has many advantages, | Продолжите: назовите недостаток | Although social media has many advantages, it can also make people feel lonely and anxious. | После **although** нужно противопоставление.
+cont: If I could change one thing about my city, | Продолжите во втором типе условных | If I could change one thing about my city, I would create more green spaces. | Главная часть — **would + V**.
+cont: On the one hand, working from home saves time; | Продолжите с «on the other hand» | On the one hand, working from home saves time; on the other hand, it can be quite isolating. | Пара **on the one hand… on the other hand**.
+cont: Contrary to popular belief, | Опровергните распространённое мнение | Contrary to popular belief, reading on a screen is not always worse than reading on paper. | **Contrary to popular belief** — «вопреки распространённому мнению».
+cont: It is often argued that | Сформулируйте тезис эссе | It is often argued that university education should be free for everyone. | Безличная формула для тезиса.
+cont: I am writing to enquire about | Продолжите официальное письмо | I am writing to enquire about the Spanish course advertised on your website. | Официальное начало письма: **enquire about**.
+cont: All things considered, | Сделайте вывод эссе о путешествиях | All things considered, travelling broadens the mind and is well worth the cost. | Вывод обобщает аргументы, без новых фактов.
+cont: To my surprise, | Расскажите о неожиданном событии | To my surprise, the interviewer asked me about my hobbies rather than my experience. | **to my surprise**; rather than — «а не».
+cont: One of the main reasons why | Объясните причину проблемы | One of the main reasons why people move to cities is the lack of jobs in rural areas. | После why — **прямой порядок слов**.
+cont: Not only does exercise improve your health, | Продолжите с «but it also» | Not only does exercise improve your health, but it also helps you sleep better. | Инверсия после Not only + **but it also**.
+
+use: take something for granted | принимать как должное | We often take our health for granted until we get ill. | take **something** for granted.
+use: be supposed to | должен (по плану, правилам) | You're supposed to wear a helmet on the building site. | **be supposed to** — ожидание или правило.
+use: it's high time | давно пора | It's high time we started saving for a house. | **it's high time + Past Simple**.
+use: as long as | при условии, что | You can borrow my car as long as you bring it back by six. | **as long as** + Present Simple.
+use: no matter how | как бы ни | No matter how hard I try, I can't remember his name. | **no matter how** + прилагательное / наречие.
+use: end up | в итоге оказаться | We got lost and ended up in a tiny village. | **end up** + -ing или место.
+use: in case | на случай, если | Take some cash in case the card doesn't work. | **in case** + Present Simple.
+use: would rather | предпочёл бы | I'd rather stay in tonight — I'm exhausted. | **would rather + V**.
+use: be about to | вот-вот, собираться | I was about to leave when the phone rang. | **be about to + V**.
+use: look forward to | с нетерпением ждать | I'm looking forward to meeting your family. | to + **-ing**.
+use: make a difference | изменить ситуацию к лучшему | Even a small donation can make a big difference. | **make a (big) difference**.
+use: on the other hand | с другой стороны | City life is exciting; on the other hand, it's very expensive. | Противопоставление второй стороны.
+use: be worth | стоить (того, чтобы) | This book is definitely worth reading. | **be worth + -ing**.
+use: come up with | придумать | She came up with a brilliant idea for the campaign. | **come up with** + идея, план, решение.
+use: despite | несмотря на | Despite the bad weather, the festival was a great success. | **despite** + существительное / -ing.
+
+op: Should homework be banned in primary schools? | In my opinion, homework shouldn't be banned completely, but it should be limited. Young children need time to play and rest, so short, creative tasks are better than hours of exercises. | Структура: **позиция → аргумент → вывод**.
+op: Is it better to live in a city or in the countryside? | I'd say it depends on your stage of life. Cities offer jobs and entertainment, which suits young people, whereas the countryside is calmer and better for families. | Сравнение через **whereas**.
+op: Should people be paid for doing housework? | I don't think so, because housework is a shared responsibility. However, the state should support parents who stay at home with small children. | Уступка: **However…**
+op: Will robots take most of our jobs? | Robots will certainly replace some jobs, especially repetitive ones. On the other hand, they will create new professions, so the key is retraining workers. | Взвесьте **плюсы и минусы**.
+op: Is it important to learn a foreign language at school? | Absolutely. Speaking another language opens up job opportunities and helps you understand other cultures, which is invaluable in a global world. | Конкретные аргументы.
+op: Should tourists pay extra to visit popular cities? | I believe a small tourist tax is fair. Popular cities suffer from overcrowding, and the money could be spent on cleaning and protecting historic sites. | Предложите **решение**.
+op: Are social media good for teenagers? | They can be useful for staying in touch and learning, but they also expose teenagers to pressure and unrealistic images. Parents should help them use social media wisely. | Позиция «**да, но**».
+op: Should public transport be free? | I think it would be a great idea. Free buses would reduce traffic and pollution and help people on low incomes. Of course, it would have to be funded by taxes. | Аргументы + оговорка (**Of course…**).
+op: Is it a good idea to take a gap year before university? | It can be, as long as it is well planned. Working or volunteering abroad helps you become more independent and decide what you really want to study. | Условие: **as long as**.
+op: Do we need to own a car nowadays? | Not necessarily. In big cities, public transport and car-sharing are often cheaper and more convenient, although a car is still essential in rural areas. | Оговорка через **although**.
