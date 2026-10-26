@@ -16,8 +16,8 @@
   --display:"Unbounded",system-ui,sans-serif; --body:"Manrope",system-ui,-apple-system,sans-serif;
   --read:"Literata",Georgia,"Times New Roman",serif; --mono:"JetBrains Mono",ui-monospace,monospace;
   --r:18px; --ease:cubic-bezier(.2,.8,.2,1);
-  /* Mochi keeps her colours in both themes: white with a dark outline */
-  --doodle:#ffffff; --doodle-ink:#1d2331; --bow:#4f86f7;
+  /* Mochi keeps her colours in both themes: a grey tabby with a light muzzle and a dark outline */
+  --doodle:#a3abb6; --muzzle:#eef0f3; --doodle-ink:#1d2331; --bow:#4f86f7;
   --blush:#ff9fb2; --tear:#5fb2f5; --sparkle:#ffc93c; --cloud:#aeb8c4; --leaf:#5fae7f;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
@@ -981,7 +981,7 @@ const POKES=[["Purr… you can do it!","Мрр… у тебя получится
 function spark(x,y,s,delay){ const a=1.7*s,b=6*s;
   return `<path class="spark" style="animation-delay:${delay}s" d="M${x} ${y-b}L${x+a} ${y-a}L${x+b} ${y}L${x+a} ${y+a}L${x} ${y+b}L${x-a} ${y+a}L${x-b} ${y}L${x-a} ${y-a}Z" fill="var(--sparkle)"/>`; }
 const heart=(cls,x,y,s)=>`<g class="heart ${cls}"><path transform="translate(${x} ${y}) scale(${s})" d="M0 3.2C-.6 2.6-5 .2-5-2.6a2.6 2.6 0 0 1 5-1.2a2.6 2.6 0 0 1 5 1.2C5 .2.6 2.6 0 3.2z" fill="#ff6f8e"/></g>`;
-// A sticker-style white cat: a soft loaf body, dot eyes, an ω mouth, pink cheeks and toe beans, a bow on her head.
+// A sticker-style grey tabby cat: a soft loaf body, a light muzzle, dot eyes, an ω mouth, pink cheeks and toe beans, a bow on her head.
 // Drawn from parts (ears, tail, paws, bow, eyes) so each can move; when very sad she melts into a puddle of tears.
 function mascotSVG(mood){
   const happy=mood==="happy", down=mood==="sad"||mood==="sad2", sob=mood==="sad2";
@@ -989,9 +989,9 @@ function mascotSVG(mood){
   const label={happy:"радуется",wait:"ждёт урока",new:"здоровается",sad:"грустит",sad2:"плачет"}[mood];
   const eyes=happy?`<path d="M42 72Q47 66 52 72M68 72Q73 66 78 72" fill="none" stroke="${K}" stroke-width="2.6" stroke-linecap="round"/>`
     :sob?`<path d="M42 66L51 70.5L42 75M78 66L69 70.5L78 75" fill="none" stroke="${K}" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>`
-    :[47,73].map(x=>down?`<ellipse cx="${x}" cy="71" rx="5.2" ry="6" fill="${K}"/><g class="shine"><circle cx="${x+1.8}" cy="68.8" r="2" fill="${W}"/><circle cx="${x-1.8}" cy="73.6" r="1" fill="${W}"/></g>
+    :[47,73].map(x=>down?`<ellipse cx="${x}" cy="71" rx="5.2" ry="6" fill="${K}"/><g class="shine"><circle cx="${x+1.8}" cy="68.8" r="2" fill="#fff"/><circle cx="${x-1.8}" cy="73.6" r="1" fill="#fff"/></g>
       <path d="M${x-5.5} 78Q${x} 81 ${x+5.5} 78" fill="none" stroke="var(--tear)" stroke-width="1.8" stroke-linecap="round"/>`
-      :`<ellipse cx="${x}" cy="71" rx="3.4" ry="4" fill="${K}"/><circle class="shine" cx="${x+1.1}" cy="69.4" r="1.2" fill="${W}"/>`).join("");
+      :`<ellipse cx="${x}" cy="71" rx="3.4" ry="4" fill="${K}"/><circle class="shine" cx="${x+1.1}" cy="69.4" r="1.2" fill="#fff"/>`).join("");
   const mouth=happy?`<path d="M57.2 79.4Q60 85.5 62.8 79.4Z" fill="${P}" stroke="${K}" stroke-width="1.4" stroke-linejoin="round"/><path d="M53.5 76.5Q57 81.5 60 77Q63 81.5 66.5 76.5" fill="none" stroke="${K}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`
     :sob?`<ellipse cx="60" cy="81" rx="6" ry="5.4" fill="${K}"/><ellipse cx="60" cy="84" rx="3.4" ry="1.8" fill="${P}"/>`
     :down?`<path d="M55 81Q60 77 65 81" fill="none" stroke="${K}" stroke-width="2" stroke-linecap="round"/>`
@@ -1025,6 +1025,7 @@ function mascotSVG(mood){
     <g class="mb"><g transform="${sob?"translate(60 114) scale(1.1 .86) translate(-60 -114)":"translate(0 0)"}">
       ${tail}${ears}
       <path d="M26 114C17 114 14 103 16 88C19 66 36 44 60 44C84 44 101 66 104 88C106 103 103 114 94 114Z" fill="${W}" stroke="${K}" stroke-width="2.4" stroke-linejoin="round"/>
+      <ellipse cx="60" cy="79" rx="11.5" ry="7.5" fill="var(--muzzle)"/><path d="M54 49.5l1.6 6M60 48v6.5M66 49.5l-1.6 6" stroke="${K}" stroke-width="2" stroke-linecap="round" opacity=".35"/>
       ${bow}${blush}<g class="eyes"><g class="look">${eyes}</g></g>${mouth}${paws}
       ${mood==="sad"?tear:""}${streams}
     </g></g>${fx}</svg>`;
