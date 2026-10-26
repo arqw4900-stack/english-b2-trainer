@@ -1,7 +1,7 @@
 // Offline support for the installed app (GitHub Pages only; the Claude artifact doesn't use it).
 // The trainer page is fetched network-first, so updates arrive whenever you are online;
 // icons, the manifest and Google Fonts are served from the cache.
-const CACHE = "english-b2-v3";
+const CACHE = "english-b2-v4";
 const SHELL = ["./", "index.html", "manifest.webmanifest", "icon-180.png", "icon-192.png", "icon-512.png"];
 
 self.addEventListener("install", e => {

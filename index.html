@@ -17,7 +17,7 @@
   --read:"Literata",Georgia,"Times New Roman",serif; --mono:"JetBrains Mono",ui-monospace,monospace;
   --r:18px; --ease:cubic-bezier(.2,.8,.2,1);
   /* Mochi keeps her colours in both themes: white with a dark outline */
-  --doodle:#ffffff; --doodle-ink:#1d2331;
+  --doodle:#ffffff; --doodle-ink:#1d2331; --bow:#4f86f7;
   --blush:#ff9fb2; --tear:#5fb2f5; --sparkle:#ffc93c; --cloud:#aeb8c4; --leaf:#5fae7f;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
@@ -201,19 +201,17 @@ ul.use{margin:0;padding-left:20px;display:grid;gap:4px}
 .readbar{position:fixed;top:0;left:0;height:3px;width:0;background:var(--primary);z-index:25;transition:width .1s linear}
 .q{display:grid;gap:8px}
 .qt{font-weight:800}
-/* buddy: Mochi the cat — waves a flower after today's lesson, cries when days are skipped */
+/* buddy: Mochi, a sticker cat — purrs and bounces after today's lesson, melts into tears when days are skipped */
 .buddy{display:grid;grid-template-columns:92px 1fr;gap:10px 12px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:12px 14px 14px;box-shadow:var(--shadow)}
 .mascot{width:92px;height:auto;display:block;overflow:visible;cursor:pointer}
-/* every moving part pivots where a real joint would be: feet, neck, ear base, shoulders, tail root, flower stem */
+/* every moving part pivots where a real joint would be: the bottom of the loaf, ear bases, tail root, wrists, the bow's knot */
 .mascot g{transform-box:view-box}
-.mascot .mb{transform-origin:60px 122px}
-.mascot .mh{transform-origin:60px 78px}
-.mascot .eyes{transform-origin:60px 52px}
-.mascot .el{transform-origin:42px 34px} .mascot .er{transform-origin:78px 34px}
-.mascot .al{transform-origin:46px 84px} .mascot .ar{transform-origin:74px 84px}
-.mascot .fl{transform-origin:51px 119px} .mascot .fr{transform-origin:69px 119px}
-.mascot .tail{transform-origin:73px 110px}
-.mascot .flower{transform-origin:29px 64px}
+.mascot .mb{transform-origin:60px 114px}
+.mascot .eyes{transform-origin:60px 71px}
+.mascot .el{transform-origin:38px 50px} .mascot .er{transform-origin:82px 50px}
+.mascot .tail{transform-origin:98px 108px}
+.mascot .pl{transform-origin:35px 92px} .mascot .pr{transform-origin:86px 92px}
+.mascot .bow{transform-origin:40px 46px}
 .mascot .shine,.mascot .heart,.mascot .spark,.mascot .dot,.mascot .puddle{transform-box:fill-box;transform-origin:center}
 .mascot .tear{transform-box:fill-box;transform-origin:50% 0}
 .mascot .heart{opacity:0}
@@ -263,46 +261,45 @@ ul.use{margin:0;padding-left:20px;display:grid;gap:4px}
   .sheet-bg{animation:fade .2s}
   .sheet{animation:sheetUp .32s var(--ease)}
   .toast,.glpop{animation:floatIn .28s var(--ease)}
-  /* Mochi: always breathing, blinking (sometimes twice), swishing her tail and twitching an ear */
-  .mascot .mb{animation:m-breathe 3.4s ease-in-out infinite}
+  /* Mochi: always breathing like a soft loaf, blinking (sometimes twice), twitching an ear, swishing her tail */
+  .mascot .mb{animation:m-breathe 3.2s ease-in-out infinite}
   .mascot .eyes{animation:m-blink 5.5s infinite}
-  .mascot .tail{animation:m-tail 3.2s ease-in-out infinite}
   .mascot .el{animation:m-earL 5s ease-in-out infinite}
   .mascot .er{animation:m-earR 5s ease-in-out 1.3s infinite}
+  .mascot .tail{animation:m-tail 3.2s ease-in-out infinite}
+  .mascot .bow{animation:m-bow 3.2s ease-in-out infinite}
   .mascot .blush{animation:m-blush 3s ease-in-out infinite}
   .mascot .spark{animation:m-twinkle 1.8s ease-in-out infinite}
-  /* happy: hops, waves the flower and the other paw, wags her tail, hearts float away */
-  .mascot.happy .mb{animation:m-jump 1.6s cubic-bezier(.3,.7,.4,1) infinite}
-  .mascot.happy .mh{animation:m-bob 1.6s ease-in-out infinite}
-  .mascot.happy .al{animation:m-swing 1.6s ease-in-out infinite}
-  .mascot.happy .ar{animation:m-hi .8s ease-in-out infinite}
-  .mascot.happy .flower{animation:m-flower 1.6s ease-in-out infinite}
-  .mascot.happy .tail{animation:m-wag .8s ease-in-out infinite}
-  .mascot.happy .heart{animation:m-heart 3.2s ease-out infinite}
-  .mascot.happy .h2{animation-delay:1.6s}
-  /* waiting: tilts her head, glances around, thinks */
-  .mascot.wait .mh{animation:m-tilt 5s ease-in-out infinite}
+  /* happy: eyes squeezed into smiles, hops with a jelly squash on landing, paws up by the cheeks, tail wagging, hearts */
+  .mascot.happy .mb{animation:m-hop 1.5s cubic-bezier(.3,.7,.4,1) infinite}
+  .mascot.happy .pl{animation:m-pawL .75s ease-in-out infinite}
+  .mascot.happy .pr{animation:m-pawR .75s ease-in-out infinite}
+  .mascot.happy .tail{animation:m-wag .7s ease-in-out infinite}
+  .mascot.happy .bow{animation:m-bow .75s ease-in-out infinite}
+  .mascot.happy .heart{animation:m-heart 3s ease-out infinite}
+  .mascot.happy .h2{animation-delay:1.5s}
+  /* waiting: sways, glances around, thinks */
+  .mascot.wait .mb{animation:m-sway 4s ease-in-out infinite}
   .mascot.wait .look{animation:m-look 7s ease-in-out infinite}
   .mascot.wait .dot{animation:m-dot 1.4s ease-in-out infinite}
   .mascot.wait .d2{animation-delay:.2s} .mascot.wait .d3{animation-delay:.4s}
   /* hello: waves a paw */
-  .mascot.new .ar{animation:m-hi .9s ease-in-out infinite}
-  .mascot.new .mh{animation:m-tilt 5s ease-in-out infinite}
-  /* sad: ears and head down, glossy eyes tremble, a tear rolls; the tail lies still */
-  .mascot.sad .mh{animation:m-droop 5s ease-in-out infinite}
+  .mascot.new .pr{animation:m-wave 1s ease-in-out infinite}
+  .mascot.new .mb{animation:m-sway 4s ease-in-out infinite}
+  /* sad: ears flat, the loaf sinks a little, glossy eyes tremble, a tear rolls; the tail lies still */
+  .mascot.sad .mb{animation:m-sink 4s ease-in-out infinite}
   .mascot.sad .shine{animation:m-wobble 1.1s ease-in-out infinite}
   .mascot.sad .tail,.mascot.sad2 .tail,.mascot.sad .el,.mascot.sad .er,.mascot.sad2 .el,.mascot.sad2 .er{animation:none}
   .mascot .tear{animation:m-tear 2.4s ease-in infinite}
-  /* very sad: sobs, two rivers of tears run into a puddle, a rain cloud above */
+  /* very sad: melted flat, sobbing, two streams of tears run into a puddle under a rain cloud */
   .mascot.sad2 .mb{animation:m-sob .9s ease-in-out infinite}
-  .mascot.sad2 .mh{animation:m-sobhead .9s ease-in-out infinite}
   .mascot .flow{animation:m-flow .7s linear infinite}
   .mascot .puddle{animation:m-puddle 2.4s ease-in-out infinite}
   .mascot .cloud{animation:m-drift 4s ease-in-out infinite}
   .mascot .drop{animation:m-rain 1s linear infinite}
   .mascot .r2{animation-delay:.33s} .mascot .r3{animation-delay:.66s}
-  /* a tap: squish, a little jump and a burst of hearts */
-  .mascot.poke .mb{animation:m-squish .75s cubic-bezier(.3,1.6,.5,1)}
+  /* a tap: wobbles like jelly and a burst of hearts */
+  .mascot.poke .mb{animation:m-jelly .85s cubic-bezier(.3,1.4,.5,1)}
   .mascot.poke .heart{animation:m-burst .9s ease-out}
   .mascot.poke .h2{animation-delay:.12s}
 }
@@ -317,33 +314,32 @@ ul.use{margin:0;padding-left:20px;display:grid;gap:4px}
 @keyframes sheetUp{from{transform:translateY(100%)}}
 @keyframes floatIn{from{opacity:0;transform:translate(-50%,12px)}}
 @keyframes fall{to{transform:translate(var(--dx),110vh) rotate(var(--r))}}
-@keyframes m-breathe{50%{transform:scale(1.025,.975)}}
+@keyframes m-breathe{50%{transform:scale(1.03,.97)}}
 @keyframes m-blink{0%,42%,46%,88%,91%,94%,100%{transform:none}44%,89.5%,92.5%{transform:scaleY(.08)}}
+@keyframes m-earL{0%,64%,76%,100%{transform:none}68%{transform:rotate(-14deg)}72%{transform:rotate(6deg)}}
+@keyframes m-earR{0%,64%,76%,100%{transform:none}68%{transform:rotate(14deg)}72%{transform:rotate(-6deg)}}
+@keyframes m-tail{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(10deg)}}
+@keyframes m-wag{0%,100%{transform:rotate(-16deg)}50%{transform:rotate(16deg)}}
+@keyframes m-bow{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(7deg)}}
 @keyframes m-blush{50%{opacity:.6}}
 @keyframes m-twinkle{0%,100%{transform:scale(.5) rotate(0);opacity:.3}50%{transform:scale(1.15) rotate(45deg);opacity:1}}
-@keyframes m-tail{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(8deg)}}
-@keyframes m-wag{0%,100%{transform:rotate(-14deg)}50%{transform:rotate(14deg)}}
-@keyframes m-earL{0%,64%,76%,100%{transform:none}68%{transform:rotate(-12deg)}72%{transform:rotate(5deg)}}
-@keyframes m-earR{0%,64%,76%,100%{transform:none}68%{transform:rotate(12deg)}72%{transform:rotate(-5deg)}}
-@keyframes m-jump{0%,100%{transform:none}12%{transform:scale(1.08,.9)}35%{transform:translateY(-12px) scale(.96,1.05)}55%{transform:translateY(-12px)}78%{transform:scale(1.06,.93)}90%{transform:none}}
-@keyframes m-bob{0%,100%{transform:rotate(0)}35%{transform:rotate(-4deg)}70%{transform:rotate(4deg)}}
-@keyframes m-swing{0%,100%{transform:rotate(0)}50%{transform:rotate(-10deg)}}
-@keyframes m-hi{0%,100%{transform:rotate(0)}50%{transform:rotate(-24deg)}}
-@keyframes m-flower{0%,100%{transform:rotate(-10deg)}50%{transform:rotate(12deg)}}
+@keyframes m-hop{0%,100%{transform:none}10%{transform:scale(1.1,.88)}30%{transform:translateY(-14px) scale(.94,1.07)}50%{transform:translateY(-14px)}68%{transform:scale(1.12,.88)}80%{transform:scale(.96,1.04)}90%{transform:scale(1.02,.98)}}
+@keyframes m-pawL{0%,100%{transform:rotate(0)}50%{transform:rotate(-14deg)}}
+@keyframes m-pawR{0%,100%{transform:rotate(0)}50%{transform:rotate(14deg)}}
 @keyframes m-heart{0%{opacity:0;transform:translateY(6px) scale(.4)}15%{opacity:1;transform:none}70%{opacity:.9}100%{opacity:0;transform:translateY(-22px) scale(.9) rotate(-10deg)}}
-@keyframes m-tilt{0%,100%{transform:rotate(0)}30%{transform:rotate(-7deg)}60%{transform:rotate(5deg)}}
+@keyframes m-sway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
 @keyframes m-look{0%,18%,100%{transform:none}25%,45%{transform:translateX(-3px)}55%,78%{transform:translate(3px,-1px)}}
 @keyframes m-dot{0%,100%{opacity:.25;transform:none}50%{opacity:1;transform:translateY(-3px)}}
-@keyframes m-droop{0%,100%{transform:translateY(1px) rotate(-3deg)}50%{transform:translateY(3px) rotate(3deg)}}
+@keyframes m-wave{0%,100%{transform:rotate(0)}50%{transform:rotate(22deg)}}
+@keyframes m-sink{0%,100%{transform:none}50%{transform:scale(1.03,.95)}}
 @keyframes m-wobble{0%,100%{transform:none}25%{transform:translate(.5px,-.3px) scale(1.1)}75%{transform:translate(-.5px,.3px) scale(.92)}}
 @keyframes m-tear{0%{opacity:0;transform:scale(.6)}15%{opacity:1;transform:none}100%{opacity:0;transform:translateY(26px) scale(.9)}}
-@keyframes m-sob{0%,100%{transform:none}30%{transform:translateY(1.5px) scale(1.02,.97)}60%{transform:translateY(-1px)}}
-@keyframes m-sobhead{0%,100%{transform:none}40%{transform:translateY(2px) rotate(-1.5deg)}70%{transform:rotate(1.5deg)}}
+@keyframes m-sob{0%,100%{transform:none}30%{transform:translateY(1.5px) scale(1.03,.96)}60%{transform:translateY(-1px)}}
 @keyframes m-flow{to{stroke-dashoffset:-12}}
 @keyframes m-puddle{0%,100%{transform:scaleX(.9);opacity:.3}50%{transform:scaleX(1.08);opacity:.45}}
 @keyframes m-drift{0%,100%{transform:translateX(-3px)}50%{transform:translateX(3px)}}
 @keyframes m-rain{0%{opacity:0;transform:none}20%{opacity:1}100%{opacity:0;transform:translateY(12px)}}
-@keyframes m-squish{0%,100%{transform:none}20%{transform:scale(1.14,.84)}45%{transform:translateY(-10px) scale(.94,1.08)}70%{transform:scale(1.05,.95)}}
+@keyframes m-jelly{0%,100%{transform:none}15%{transform:scale(1.18,.82)}35%{transform:scale(.9,1.12)}55%{transform:scale(1.06,.94)}75%{transform:scale(.98,1.02)}}
 @keyframes m-burst{0%{opacity:0;transform:scale(.3)}30%{opacity:1;transform:translateY(-6px) scale(1.15)}100%{opacity:0;transform:translateY(-22px) scale(.9)}}
 /* grammar rules, phrases; free answers: practice, writing trainer, my dictionary */
 ul.rule{margin:0;padding-left:20px;display:grid;gap:6px}
@@ -971,87 +967,85 @@ function mascotMood(){
   if(g===null) return [Object.keys(S.w).length?"sad2":"new",null];
   return [g===1?"wait":g===2?"sad":"sad2",g];
 }
+const MASCOT="Кошечка Моти";
 function mascotLine(mood,g,sk){
-  if(mood==="happy") return sk>=2?[`Great job! ${sk} days in a row.`,`Отлично! Уже ${sk} ${plural(sk,"день","дня","дней")} подряд — Моти довольна.`]
-    :["Great job! Today's lesson is done.","Отлично! Урок на сегодня сделан — Моти довольна."];
+  if(mood==="happy") return sk>=2?[`Great job! ${sk} days in a row.`,`Отлично! Уже ${sk} ${plural(sk,"день","дня","дней")} подряд — Моти мурчит от счастья.`]
+    :["Great job! Today's lesson is done.","Отлично! Урок на сегодня сделан — Моти мурчит от счастья."];
   if(mood==="wait") return ["I'm waiting for you! One lesson and I'll be happy.","Жду тебя! Один урок — и я буду счастлива."];
   if(mood==="sad") return ["No lesson yesterday… I'm a little sad.","Вчера урока не было… Мне немножко грустно."];
   if(mood==="sad2") return g?[`I haven't seen you for ${g} days… I miss you.`,`Не видела тебя уже ${g} ${plural(g,"день","дня","дней")}… Очень скучаю.`]
     :["It's been ages… I miss you so much.","Давно тебя не было… Очень скучаю."];
   return ["Hi! I'm Mochi. Shall we learn together?","Привет! Я кошечка Моти. Будем учиться вместе?"];
 }
-const POKES=[["You can do it!","У тебя получится!"],["One more lesson?","Ещё один урок?"],["I'm learning with you.","Я учусь вместе с тобой."],["English is fun!","Английский — это весело!"],["A fish after the lesson?","Рыбка после урока?"]];
+const POKES=[["Purr… you can do it!","Мрр… у тебя получится!"],["One more lesson?","Ещё один урок?"],["I'm learning with you.","Я учусь вместе с тобой."],["English is fun!","Английский — это весело!"],["A fish after the lesson?","Рыбка после урока?"]];
 function spark(x,y,s,delay){ const a=1.7*s,b=6*s;
   return `<path class="spark" style="animation-delay:${delay}s" d="M${x} ${y-b}L${x+a} ${y-a}L${x+b} ${y}L${x+a} ${y+a}L${x} ${y+b}L${x-a} ${y+a}L${x-b} ${y}L${x-a} ${y-a}Z" fill="var(--sparkle)"/>`; }
 const heart=(cls,x,y,s)=>`<g class="heart ${cls}"><path transform="translate(${x} ${y}) scale(${s})" d="M0 3.2C-.6 2.6-5 .2-5-2.6a2.6 2.6 0 0 1 5-1.2a2.6 2.6 0 0 1 5 1.2C5 .2.6 2.6 0 3.2z" fill="#ff6f8e"/></g>`;
-// Mochi is a sticker doodle: a white cat with a ·ω· face. Happy, she waves a flower; sad, she cries rivers of tears.
-// She is drawn from parts (body, tail, feet, arms, ears, head, eyes) so each can move on its own.
+// A sticker-style white cat: a soft loaf body, dot eyes, an ω mouth, pink cheeks and toe beans, a bow on her head.
+// Drawn from parts (ears, tail, paws, bow, eyes) so each can move; when very sad she melts into a puddle of tears.
 function mascotSVG(mood){
   const happy=mood==="happy", down=mood==="sad"||mood==="sad2", sob=mood==="sad2";
-  const K="var(--doodle-ink)", W="var(--doodle)", L=`stroke="${K}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"`;
+  const K="var(--doodle-ink)", W="var(--doodle)", P="#ffa3b5", L=`stroke="${K}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"`;
   const label={happy:"радуется",wait:"ждёт урока",new:"здоровается",sad:"грустит",sad2:"плачет"}[mood];
-  const eyes=sob?`<path d="M42 48L51 52.5L42 57M78 48L69 52.5L78 57" fill="none" stroke="${K}" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>`
-    :[47,73].map(x=>down?`<ellipse cx="${x}" cy="52" rx="4.6" ry="5.4" fill="${K}"/><g class="shine"><circle cx="${x+1.5}" cy="50" r="1.8" fill="${W}"/><circle cx="${x-1.4}" cy="54.2" r=".9" fill="${W}"/></g>
-      <path d="M${x-5} 58.5Q${x} 61 ${x+5} 58.5" fill="none" stroke="var(--tear)" stroke-width="1.8" stroke-linecap="round"/>`
-      :`<ellipse cx="${x}" cy="52" rx="3.1" ry="3.7" fill="${K}"/><circle class="shine" cx="${x+1}" cy="50.6" r="1.1" fill="${W}"/>`).join("");
-  const mouth=sob?`<ellipse cx="60" cy="64" rx="7" ry="6.4" fill="${K}"/><ellipse cx="60" cy="67.5" rx="4" ry="2.1" fill="#ff8fa3"/>`
-    :down?`<path d="M54.5 64Q60 60 65.5 64" fill="none" stroke="${K}" stroke-width="2" stroke-linecap="round"/>`
-    :`<path d="M53 59Q56.5 64 60 59.5Q63.5 64 67 59" fill="none" stroke="${K}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`;
-  const blush=`<g class="blush" opacity="${happy?.95:down?.45:.75}"><ellipse cx="38.5" cy="60" rx="5" ry="2.8" fill="var(--blush)"/><ellipse cx="81.5" cy="60" rx="5" ry="2.8" fill="var(--blush)"/>
-    ${happy?`<path d="M35.5 60.6l2-2.4M38.5 60.9l2-2.4M41.5 61l2-2.4M78.5 61l2-2.4M81.5 60.9l2-2.4M84.5 60.6l2-2.4" stroke="#ff6f8e" stroke-width="1.1" stroke-linecap="round"/>`:""}</g>`;
-  const whiskers=`<path d="M29 55l-9-2M29 59l-9 1M91 55l9-2M91 59l9 1" stroke="var(--muted)" stroke-width="1.5" stroke-linecap="round" opacity="${down?.5:.8}"/>`;
-  // ears droop when she is sad
-  const ear=(cls,d,inner,a,x)=>`<g transform="rotate(${a} ${x} 34)"><g class="${cls}"><path d="${d}" fill="${W}" ${L}/><path d="${inner}" fill="var(--blush)" opacity=".55"/></g></g>`;
-  const ears=ear("el","M33 44L35 19Q36 15 40 17L55 30","M37.5 37L38.8 23.5L47.5 30Z",down?-28:0,42)+ear("er","M87 44L85 19Q84 15 80 17L65 30","M82.5 37L81.2 23.5L72.5 30Z",down?28:0,78);
-  // arms hang down, or go up: the left one holds a flower when she is happy, the right one waves hello
-  const up=x=>x<60?"M45 86Q35 81 29 71Q26 66 30 64Q34 65 38 72Q42 78 47 80":"M75 86Q85 81 91 71Q94 66 90 64Q86 65 82 72Q78 78 73 80";
-  const hang=x=>x<60?"M46 82Q38 88 37 99Q37 104 42 103Q45 97 48 91":"M74 82Q82 88 83 99Q83 104 78 103Q75 97 72 91";
-  const flower=`<g class="flower"><path d="M29 64Q22 52 21 40" fill="none" stroke="var(--leaf)" stroke-width="2.2" stroke-linecap="round"/><ellipse cx="24" cy="52" rx="4" ry="2" transform="rotate(-35 24 52)" fill="var(--leaf)"/>
-    ${[0,72,144,216,288].map(a=>`<circle cx="${(20.5+4.4*Math.cos(a*Math.PI/180)).toFixed(1)}" cy="${(35.5+4.4*Math.sin(a*Math.PI/180)).toFixed(1)}" r="3.6" fill="${W}" stroke="${K}" stroke-width="1.2"/>`).join("")}<circle cx="20.5" cy="35.5" r="2.6" fill="var(--sparkle)" stroke="${K}" stroke-width="1"/></g>`;
-  const arms=`<g class="al"><path d="${happy?up(0):hang(0)}" fill="${W}" ${L}/>${happy?flower:""}</g><g class="ar"><path d="${happy||mood==="new"?up(99):hang(99)}" fill="${W}" ${L}/></g>`;
-  const tail=`<g class="tail"><path d="${down?"M73 110Q90 117 101 112":"M73 109Q94 110 97 94Q99 82 90 82"}" fill="none" stroke="${K}" stroke-width="9" stroke-linecap="round"/><path d="${down?"M73 110Q90 117 101 112":"M73 109Q94 110 97 94Q99 82 90 82"}" fill="none" stroke="${W}" stroke-width="5" stroke-linecap="round"/></g>`;
-  const tear=`<path class="tear" d="M78 60q-3 4.8 0 7.2q3-2.4 0-7.2z" fill="var(--tear)"/>`;
-  const stream="M45 58C39 75 45 92 35 120M75 58C81 75 75 92 85 120";
+  const eyes=happy?`<path d="M42 72Q47 66 52 72M68 72Q73 66 78 72" fill="none" stroke="${K}" stroke-width="2.6" stroke-linecap="round"/>`
+    :sob?`<path d="M42 66L51 70.5L42 75M78 66L69 70.5L78 75" fill="none" stroke="${K}" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>`
+    :[47,73].map(x=>down?`<ellipse cx="${x}" cy="71" rx="5.2" ry="6" fill="${K}"/><g class="shine"><circle cx="${x+1.8}" cy="68.8" r="2" fill="${W}"/><circle cx="${x-1.8}" cy="73.6" r="1" fill="${W}"/></g>
+      <path d="M${x-5.5} 78Q${x} 81 ${x+5.5} 78" fill="none" stroke="var(--tear)" stroke-width="1.8" stroke-linecap="round"/>`
+      :`<ellipse cx="${x}" cy="71" rx="3.4" ry="4" fill="${K}"/><circle class="shine" cx="${x+1.1}" cy="69.4" r="1.2" fill="${W}"/>`).join("");
+  const mouth=happy?`<path d="M57.2 79.4Q60 85.5 62.8 79.4Z" fill="${P}" stroke="${K}" stroke-width="1.4" stroke-linejoin="round"/><path d="M53.5 76.5Q57 81.5 60 77Q63 81.5 66.5 76.5" fill="none" stroke="${K}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`
+    :sob?`<ellipse cx="60" cy="81" rx="6" ry="5.4" fill="${K}"/><ellipse cx="60" cy="84" rx="3.4" ry="1.8" fill="${P}"/>`
+    :down?`<path d="M55 81Q60 77 65 81" fill="none" stroke="${K}" stroke-width="2" stroke-linecap="round"/>`
+    :`<path d="M54 77Q57 81 60 77.5Q63 81 66 77" fill="none" stroke="${K}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`;
+  const blush=`<g class="blush" opacity="${happy?.95:down?.45:.75}"><ellipse cx="37.5" cy="79" rx="5.5" ry="3" fill="var(--blush)"/><ellipse cx="82.5" cy="79" rx="5.5" ry="3" fill="var(--blush)"/>
+    ${happy?`<path d="M34.5 79.6l2-2.4M37.5 79.9l2-2.4M40.5 80l2-2.4M79.5 80l2-2.4M82.5 79.9l2-2.4M85.5 79.6l2-2.4" stroke="#ff6f8e" stroke-width="1.1" stroke-linecap="round"/>`:""}</g>`;
+  // ears sit behind the body; they flatten when she is sad
+  const ear=(cls,x,d,inner,a)=>`<g transform="rotate(${a} ${x} 50)"><g class="${cls}"><path d="${d}" fill="${W}" ${L}/><path d="${inner}" fill="${P}" opacity=".7"/></g></g>`;
+  const ears=ear("el",38,"M30 64L31 30Q32 25 37 28L54 47","M35 49L35.6 33.5L45.5 44Z",down?-32:0)+ear("er",82,"M90 64L89 30Q88 25 83 28L66 47","M85 49L84.4 33.5L74.5 44Z",down?32:0);
+  const tailD=down?"M98 110Q110 116 118 110":"M98 108Q116 104 113 88Q111 79 104 82";
+  const tail=`<g class="tail"><path d="${tailD}" fill="none" stroke="${K}" stroke-width="9" stroke-linecap="round"/><path d="${tailD}" fill="none" stroke="${W}" stroke-width="4.6" stroke-linecap="round"/></g>`;
+  // paws: tucked in front, or held up by the cheeks with the pink beans showing
+  const front=x=>`<ellipse cx="${x}" cy="113" rx="7.5" ry="4.8" fill="${W}" ${L}/><path d="M${x-2} 111.4v2.6M${x+2} 111.4v2.6" stroke="${K}" stroke-width="1.2" stroke-linecap="round"/>`;
+  const raised=x=>`<ellipse cx="${x}" cy="85" rx="6.6" ry="7.6" fill="${W}" ${L}/><ellipse cx="${x}" cy="87.4" rx="2.7" ry="2.1" fill="${P}"/>
+    <circle cx="${x-2.6}" cy="82.6" r="1.25" fill="${P}"/><circle cx="${x}" cy="81.6" r="1.25" fill="${P}"/><circle cx="${x+2.6}" cy="82.6" r="1.25" fill="${P}"/>`;
+  const paws=happy?`<g class="pl">${raised(31)}</g><g class="pr">${raised(89)}</g>`
+    :mood==="new"?`${front(47)}<g class="pr">${raised(91)}</g>`:`<g class="pf">${front(47)}${front(73)}</g>`;
+  const bow=`<g class="bow"><path d="M40 46L31 41.5Q29.5 46 31 50.5ZM40 46L49 41.5Q50.5 46 49 50.5Z" fill="var(--bow)" stroke="${K}" stroke-width="1.4" stroke-linejoin="round"/><circle cx="40" cy="46" r="2.6" fill="var(--bow)" stroke="${K}" stroke-width="1.4"/><circle cx="33.6" cy="44.4" r="1" fill="#fff" opacity=".8"/></g>`;
+  const tear=`<path class="tear" d="M80 76q-3 4.8 0 7.2q3-2.4 0-7.2z" fill="var(--tear)"/>`;
+  const stream="M44 75C39 88 44 101 37 119M76 75C81 88 76 101 83 119";
   const streams=sob?`<path d="${stream}" fill="none" stroke="var(--tear)" stroke-width="6" stroke-linecap="round" opacity=".55"/>
     <path class="flow" d="${stream}" fill="none" stroke="#e3f3ff" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 9"/>`:"";
-  const cloud=sob?`<g class="cloud"><circle cx="49" cy="-10" r="7" fill="var(--cloud)"/><circle cx="60" cy="-14" r="9" fill="var(--cloud)"/><circle cx="71" cy="-10" r="7" fill="var(--cloud)"/><rect x="49" y="-10" width="22" height="7" rx="3.5" fill="var(--cloud)"/>
-    <path class="drop" d="M52 0v5" stroke="var(--tear)" stroke-width="2" stroke-linecap="round"/><path class="drop r2" d="M60 1v5" stroke="var(--tear)" stroke-width="2" stroke-linecap="round"/><path class="drop r3" d="M68 0v5" stroke="var(--tear)" stroke-width="2" stroke-linecap="round"/></g>`:"";
-  const fx=heart("h1",100,14,1.1)+heart("h2",48,4,.9)
-    +(happy?spark(108,26,1,0)+spark(10,14,.7,.6)+spark(112,66,.6,1.1):"")
-    +(mood==="new"?spark(108,48,.8,0):"")
-    +(mood==="wait"?`<circle class="dot d1" cx="100" cy="14" r="2.2" fill="var(--muted)"/><circle class="dot d2" cx="107" cy="11" r="2.2" fill="var(--muted)"/><circle class="dot d3" cx="114" cy="8" r="2.2" fill="var(--muted)"/>`:"");
-  return `<svg class="mascot ${mood}" viewBox="0 -20 120 144" role="img" aria-label="Кошечка Моти ${label}">${cloud}
-    <ellipse ${sob?'class="puddle" fill="var(--tear)" opacity=".35" rx="34" ry="4.8"':`fill="${K}" opacity=".12" rx="26" ry="3.6"`} cx="60" cy="121"/>
-    <g class="mb">
-      ${tail}
-      <g class="fl"><ellipse cx="51" cy="117" rx="6.8" ry="4.3" fill="${W}" ${L}/></g><g class="fr"><ellipse cx="69" cy="117" rx="6.8" ry="4.3" fill="${W}" ${L}/></g>
-      <path d="M44 74Q38 102 45 113Q60 120 75 113Q82 102 76 74Z" fill="${W}" ${L}/>
-      ${arms}
-      <g transform="translate(0 ${down?3:0})"><g class="mh">
-        ${ears}
-        <path d="M60 24C82 24 93 37 93 54C93 70 79 80 60 80C41 80 27 70 27 54C27 37 38 24 60 24Z" fill="${W}" stroke="${K}" stroke-width="2.4" stroke-linejoin="round"/>
-        ${whiskers}${blush}<g class="eyes"><g class="look">${eyes}</g></g>${mouth}
-        ${mood==="sad"?tear:""}${streams}
-      </g></g>
-    </g>${fx}</svg>`;
+  const cloud=sob?`<g class="cloud"><circle cx="49" cy="-6" r="7" fill="var(--cloud)"/><circle cx="60" cy="-10" r="9" fill="var(--cloud)"/><circle cx="71" cy="-6" r="7" fill="var(--cloud)"/><rect x="49" y="-6" width="22" height="7" rx="3.5" fill="var(--cloud)"/>
+    <path class="drop" d="M52 4v5" stroke="var(--tear)" stroke-width="2" stroke-linecap="round"/><path class="drop r2" d="M60 5v5" stroke="var(--tear)" stroke-width="2" stroke-linecap="round"/><path class="drop r3" d="M68 4v5" stroke="var(--tear)" stroke-width="2" stroke-linecap="round"/></g>`:"";
+  const fx=heart("h1",100,26,1.1)+heart("h2",20,30,.9)
+    +(happy?spark(108,40,1,0)+spark(12,50,.7,.6)+spark(112,78,.6,1.1)+spark(60,14,.6,.3):"")
+    +(mood==="new"?spark(104,52,.8,0):"")
+    +(mood==="wait"?`<circle class="dot d1" cx="100" cy="30" r="2.2" fill="var(--muted)"/><circle class="dot d2" cx="107" cy="27" r="2.2" fill="var(--muted)"/><circle class="dot d3" cx="114" cy="24" r="2.2" fill="var(--muted)"/>`:"");
+  return `<svg class="mascot ${mood}" viewBox="0 -20 120 144" role="img" aria-label="${MASCOT} ${label}">${cloud}
+    <ellipse ${sob?'class="puddle" fill="var(--tear)" opacity=".35" rx="38" ry="5"':`fill="${K}" opacity=".12" rx="40" ry="3.6"`} cx="60" cy="118"/>
+    <g class="mb"><g transform="${sob?"translate(60 114) scale(1.1 .86) translate(-60 -114)":"translate(0 0)"}">
+      ${tail}${ears}
+      <path d="M26 114C17 114 14 103 16 88C19 66 36 44 60 44C84 44 101 66 104 88C106 103 103 114 94 114Z" fill="${W}" stroke="${K}" stroke-width="2.4" stroke-linejoin="round"/>
+      ${bow}${blush}<g class="eyes"><g class="look">${eyes}</g></g>${mouth}${paws}
+      ${mood==="sad"?tear:""}${streams}
+    </g></g>${fx}</svg>`;
 }
 const PAW='<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="9" r="2.4"/><circle cx="12" cy="6.2" r="2.4"/><circle cx="17.5" cy="9" r="2.4"/><path d="M12 11.5c-3.2 0-6 3.4-6 5.8 0 1.8 1.6 2.7 3.2 2.2.9-.3 1.8-.5 2.8-.5s1.9.2 2.8.5c1.6.5 3.2-.4 3.2-2.2 0-2.4-2.8-5.8-6-5.8z"/></svg>';
 function buddyHTML(sk){
-  const [mood,g]=mascotMood(), [en,ru]=mascotLine(mood,g,sk), t=today(), wd=["вс","пн","вт","ср","чт","пт","сб"];
+  const [mood,g]=mascotMood(), [txt,ru]=mascotLine(mood,g,sk), t=today(), wd=["вс","пн","вт","ср","чт","пт","сб"];
   const week=[...Array(7)].map((_,i)=>{ const d=t-6+i, on=dayDone(dstr(d));
     return `<div class="day${on?" on":""}${i===6?" today":""}"><i>${on?PAW:""}</i>${i===6?"сег.":wd[new Date(d*DAY).getUTCDay()]}</div>`; }).join("");
-  return `<section class="buddy">${mascotSVG(mood)}<div class="bubble" id="bubble"><b lang="en">${en}</b><span>${ru}</span></div>
+  return `<section class="buddy">${mascotSVG(mood)}<div class="bubble" id="bubble"><b lang="en">${txt}</b><span>${ru}</span></div>
     <div class="week" role="img" aria-label="Уроки за последние 7 дней: ${[...Array(7)].filter((_,i)=>dayDone(dstr(t-6+i))).length} из 7">${week}</div></section>`;
 }
 // shown on a finished session, quiz, story or text
 function mascotDone(first){
-  const sk=streak(), [en,ru]=first?mascotLine("happy",0,sk):["Another lesson — awesome!","Ещё один урок — супер!"];
-  return `<div class="buddy-done">${mascotSVG("happy")}<div class="bubble up"><b lang="en">${en}</b><span>${ru}</span></div></div>`;
+  const sk=streak(), [txt,ru]=first?mascotLine("happy",0,sk):["Another lesson — awesome!","Ещё один урок — супер!"];
+  return `<div class="buddy-done">${mascotSVG("happy")}<div class="bubble up"><b lang="en">${txt}</b><span>${ru}</span></div></div>`;
 }
 function pokeMascot(e){
   const p=e.currentTarget; p.classList.remove("poke"); void p.getBBox(); p.classList.add("poke");
-  clearTimeout(p._t); p._t=setTimeout(()=>p.classList.remove("poke"),800);
-  const b=$("#bubble"); if(b){ const [en,ru]=POKES[Math.floor(Math.random()*POKES.length)]; b.innerHTML=`<b lang="en">${en}</b><span>${ru}</span>`; }
+  clearTimeout(p._t); p._t=setTimeout(()=>p.classList.remove("poke"),850);
+  const b=$("#bubble"); if(b){ const [txt,ru]=POKES[Math.floor(Math.random()*POKES.length)]; b.innerHTML=`<b lang="en">${txt}</b><span>${ru}</span>`; }
 }
 
 // ---------- navigation ----------
