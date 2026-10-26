@@ -16,6 +16,9 @@
   --display:"Unbounded",system-ui,sans-serif; --body:"Manrope",system-ui,-apple-system,sans-serif;
   --read:"Literata",Georgia,"Times New Roman",serif; --mono:"JetBrains Mono",ui-monospace,monospace;
   --r:18px; --ease:cubic-bezier(.2,.8,.2,1);
+  /* Koko the koala keeps her colours in both themes */
+  --koala:#a7b0ba; --koala-dark:#7d8792; --koala-light:#eef1f4; --koala-ear:#f6e3ea; --koala-nose:#3b3436; --koala-line:#59616b;
+  --blush:#ff9fb2; --tear:#5fb2f5; --sparkle:#ffc93c; --cloud:#aeb8c4; --leaf:#5fae7f; --leaf-dark:#3f8a5d;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#0e1522; --surface:#162032; --raise:#1d2940; --ink:#e8eef8; --muted:#9ba8be; --line:#2a3750; --rule:#1c273a;
@@ -197,6 +200,36 @@ ul.use{margin:0;padding-left:20px;display:grid;gap:4px}
 .readbar{position:fixed;top:0;left:0;height:3px;width:0;background:var(--primary);z-index:25;transition:width .1s linear}
 .q{display:grid;gap:8px}
 .qt{font-weight:800}
+/* buddy: Koko the koala — happy after today's lesson, sad when days are skipped */
+.buddy{display:grid;grid-template-columns:92px 1fr;gap:10px 12px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:12px 14px 14px;box-shadow:var(--shadow)}
+.koala{width:92px;height:auto;display:block;overflow:visible;cursor:pointer}
+/* every moving part pivots where a real joint would be: feet, neck, ear base, shoulder */
+.koala g{transform-box:view-box}
+.koala .pb{transform-origin:60px 122px}
+.koala .head{transform-origin:60px 90px}
+.koala .el{transform-origin:34px 46px} .koala .er{transform-origin:86px 46px}
+.koala .al{transform-origin:42px 92px} .koala .ar{transform-origin:78px 92px}
+.koala .eyes{transform-origin:60px 58px}
+.koala .leaf{transform-origin:74px 30px}
+.koala .heart,.koala .spark,.koala .dot{transform-box:fill-box;transform-origin:center}
+.koala .tear{transform-box:fill-box;transform-origin:50% 0}
+.koala .heart{opacity:0}
+.koala.sad .head,.koala.sad2 .head{transform:translateY(3px)}
+.koala.sad .el,.koala.sad2 .el{transform:rotate(-12deg)}
+.koala.sad .er,.koala.sad2 .er{transform:rotate(12deg)}
+.bubble{position:relative;background:var(--raise);border-radius:16px;padding:10px 12px;display:grid;gap:2px;min-width:0}
+.bubble::before{content:"";position:absolute;left:-8px;top:50%;margin-top:-8px;border:8px solid transparent;border-left:0;border-right-color:var(--raise)}
+.bubble b{font-family:var(--read);font-size:1rem;font-weight:600;line-height:1.35}
+.bubble span{font-size:.8rem;color:var(--muted);line-height:1.35}
+.week{grid-column:1/-1;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}
+.day{display:grid;justify-items:center;gap:3px;font-size:.68rem;font-weight:700;color:var(--muted)}
+.day i{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--raise);border:2px solid transparent}
+.day i svg{width:15px;height:15px;fill:var(--good)}
+.day.on i{background:var(--good-soft);border-color:var(--good)}
+.day.today:not(.on) i{border:2px dashed var(--muted);background:transparent}
+.buddy-done{display:grid;justify-items:center;gap:8px}
+.buddy-done .koala{width:110px}
+.bubble.up::before{left:50%;top:-8px;margin:0 0 0 -8px;border:8px solid transparent;border-top:0;border-bottom-color:var(--raise)}
 /* sheet */
 .sheet-bg{position:fixed;inset:0;background:var(--scrim);z-index:40;display:flex;align-items:flex-end;justify-content:center}
 .sheet{background:var(--surface);width:100%;max-width:600px;border-radius:22px 22px 0 0;padding:20px max(18px,env(safe-area-inset-left,0px)) calc(22px + env(safe-area-inset-bottom,0px)) max(18px,env(safe-area-inset-right,0px));display:grid;gap:14px;max-height:85vh;overflow:auto}
@@ -230,6 +263,41 @@ ul.use{margin:0;padding-left:20px;display:grid;gap:4px}
   .sheet-bg{animation:fade .2s}
   .sheet{animation:sheetUp .32s var(--ease)}
   .toast,.glpop{animation:floatIn .28s var(--ease)}
+  /* Koko: always breathing, swaying, blinking (sometimes twice), glancing around and twitching an ear */
+  .koala .pb{animation:k-breathe 3.6s ease-in-out infinite}
+  .koala .head{animation:k-sway 6s ease-in-out infinite}
+  .koala .eyes{animation:k-blink 6s infinite}
+  .koala .pupils{animation:k-look 8s ease-in-out infinite}
+  .koala .el{animation:k-earL 5s ease-in-out infinite}
+  .koala .er{animation:k-earR 5s ease-in-out 1.3s infinite}
+  .koala .blush{animation:k-blush 3s ease-in-out infinite}
+  .koala .spark{animation:k-twinkle 1.8s ease-in-out infinite}
+  /* happy: hops with squash and stretch, cheers with both paws, hearts float up, the eucalyptus leaf sways */
+  .koala.happy .pb{animation:k-hop 1.8s cubic-bezier(.3,.7,.4,1) infinite}
+  .koala.happy .al{animation:k-cheerL 1.8s ease-in-out infinite}
+  .koala.happy .ar{animation:k-cheerR 1.8s ease-in-out infinite}
+  .koala.happy .heart{animation:k-heart 3.2s ease-out infinite}
+  .koala.happy .h2{animation-delay:1.6s}
+  .koala .leaf{animation:k-leaf 2.4s ease-in-out infinite}
+  /* waiting: tilts her head and thinks */
+  .koala.wait .head{animation:k-tilt 5s ease-in-out infinite}
+  .koala.wait .dot{animation:k-dot 1.4s ease-in-out infinite}
+  .koala.wait .d2{animation-delay:.2s} .koala.wait .d3{animation-delay:.4s}
+  /* first visit: waves hello */
+  .koala.new .ar{animation:k-wave 1.6s ease-in-out infinite}
+  /* sad: head down, ears drooping, sniffing, tears; very sad: a little rain cloud */
+  .koala.sad .head,.koala.sad2 .head{animation:k-sadhead 5s ease-in-out infinite}
+  .koala.sad .el,.koala.sad2 .el,.koala.sad .er,.koala.sad2 .er{animation:none}
+  .koala.sad .pb,.koala.sad2 .pb{animation:k-sniff 4.5s ease-in-out infinite}
+  .koala .tear{animation:k-tear 2.6s ease-in infinite}
+  .koala .t2{animation-delay:1.3s}
+  .koala .cloud{animation:k-drift 4s ease-in-out infinite}
+  .koala .drop{animation:k-rain 1s linear infinite}
+  .koala .r2{animation-delay:.33s} .koala .r3{animation-delay:.66s}
+  /* a tap: squish and a burst of hearts */
+  .koala.poke .pb{animation:k-squish .7s cubic-bezier(.3,1.6,.5,1)}
+  .koala.poke .heart{animation:k-burst .9s ease-out}
+  .koala.poke .h2{animation-delay:.12s}
 }
 @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 @keyframes cardIn{from{opacity:0;transform:translateX(24px) rotate(1deg)}to{opacity:1;transform:none}}
@@ -242,6 +310,29 @@ ul.use{margin:0;padding-left:20px;display:grid;gap:4px}
 @keyframes sheetUp{from{transform:translateY(100%)}}
 @keyframes floatIn{from{opacity:0;transform:translate(-50%,12px)}}
 @keyframes fall{to{transform:translate(var(--dx),110vh) rotate(var(--r))}}
+@keyframes k-breathe{50%{transform:scale(1.022,.978)}}
+@keyframes k-sway{0%,100%{transform:rotate(0)}30%{transform:rotate(-2.5deg)}70%{transform:rotate(2.5deg)}}
+@keyframes k-blink{0%,44%,48%,90%,93%,96%,100%{transform:none}46%,91.5%,94.5%{transform:scaleY(.08)}}
+@keyframes k-look{0%,18%,72%,100%{transform:none}24%,40%{transform:translateX(-1.6px)}48%,64%{transform:translateX(1.6px)}}
+@keyframes k-earL{0%,64%,76%,100%{transform:none}68%{transform:rotate(-10deg)}72%{transform:rotate(4deg)}}
+@keyframes k-earR{0%,64%,76%,100%{transform:none}68%{transform:rotate(10deg)}72%{transform:rotate(-4deg)}}
+@keyframes k-blush{50%{opacity:.55}}
+@keyframes k-twinkle{50%{opacity:.2;transform:scale(.5) rotate(45deg)}}
+@keyframes k-hop{0%,100%{transform:none}12%{transform:scale(1.07,.92)}34%{transform:translateY(-10px) scale(.95,1.06)}50%{transform:translateY(0) scale(1.08,.91)}62%{transform:scale(.97,1.03)}74%{transform:none}}
+@keyframes k-cheerL{0%,10%,74%,100%{transform:none}34%,50%{transform:rotate(52deg)}}
+@keyframes k-cheerR{0%,10%,74%,100%{transform:none}34%,50%{transform:rotate(-52deg)}}
+@keyframes k-heart{0%{opacity:0;transform:translateY(6px) scale(.4)}15%{opacity:1;transform:none}100%{opacity:0;transform:translateY(-26px) scale(.8) rotate(12deg)}}
+@keyframes k-leaf{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}
+@keyframes k-tilt{0%,100%{transform:rotate(0)}20%,40%{transform:rotate(-9deg)}60%,80%{transform:rotate(7deg)}}
+@keyframes k-dot{0%,100%{opacity:.25;transform:none}40%{opacity:1;transform:translateY(-3px)}}
+@keyframes k-wave{0%,100%{transform:rotate(-48deg)}50%{transform:rotate(-78deg)}}
+@keyframes k-sadhead{0%,100%{transform:translateY(3px)}50%{transform:translateY(4.5px) rotate(-2deg)}}
+@keyframes k-sniff{0%,70%,100%{transform:none}74%,82%{transform:scale(1.012,.98)}78%{transform:scale(.99,1.012)}}
+@keyframes k-tear{0%{opacity:0;transform:translateY(-2px) scale(.3)}18%{opacity:1;transform:none}70%{opacity:1;transform:translateY(15px)}100%{opacity:0;transform:translateY(22px) scale(.8)}}
+@keyframes k-drift{0%,100%{transform:translateX(-3px)}50%{transform:translateX(3px)}}
+@keyframes k-rain{0%{opacity:0;transform:none}20%{opacity:1}100%{opacity:0;transform:translateY(12px)}}
+@keyframes k-squish{0%,100%{transform:none}25%{transform:scale(1.12,.86)}55%{transform:scale(.94,1.08)}80%{transform:scale(1.03,.97)}}
+@keyframes k-burst{0%{opacity:0;transform:scale(.3)}30%{opacity:1;transform:translateY(-6px) scale(1.15)}100%{opacity:0;transform:translateY(-22px) scale(.9)}}
 </style>
 
 <div class="readbar" id="readbar" hidden></div>
@@ -696,7 +787,7 @@ function merge(a,b){
     const fresh=(x.rs||0)>=rs;
     for(const k in (x.w||{})){ const v=x.w[k]; if(!fresh && (v.t||0)<=rs) continue; if(!out.w[k] || (v.t||0)>(out.w[k].t||0)) out.w[k]=v; }
     if(!fresh) continue;
-    for(const k in (x.log||{})){ const p=out.log[k]||{r:0,ok:0,n:0}, y=x.log[k]; out.log[k]={r:Math.max(p.r,y.r||0),ok:Math.max(p.ok,y.ok||0),n:Math.max(p.n,y.n||0)}; }
+    for(const k in (x.log||{})){ const p=out.log[k]||{r:0,ok:0,n:0,u:0}, y=x.log[k]; out.log[k]={r:Math.max(p.r,y.r||0),ok:Math.max(p.ok,y.ok||0),n:Math.max(p.n,y.n||0),u:Math.max(p.u||0,y.u||0)}; }
     for(const k in (x.tn||{})){ out.tn[k]=Math.max(out.tn[k]||0,x.tn[k]); }
     for(const k in (x.rd||{})){ out.rd[k]=Math.max(out.rd[k]??0,x.rd[k]); }
   }
@@ -704,7 +795,8 @@ function merge(a,b){
 }
 let dirty=false, saveTimer=null;
 function persist(){ try{localStorage.setItem("b2-state",JSON.stringify(S));}catch(e){} dirty=true; clearTimeout(saveTimer); saveTimer=setTimeout(pushRemote,3000); }
-const L=()=>{ const k=dstr(today()); return S.log[k]||(S.log[k]={r:0,ok:0,n:0}); };
+// log per day: r answers, ok correct, n new words, u lessons finished
+const L=()=>{ const k=dstr(today()); return S.log[k]||(S.log[k]={r:0,ok:0,n:0,u:0}); };
 
 // ---------- cloud sync (same progress on phone and computer) ----------
 let db=null, docRef=null, syncOn=false;
@@ -783,13 +875,96 @@ function themeStats(ti){
   for(const w of ws){ const s=st(w.key); if(!s) n++; else if(s.s>=LEARNED) k++; else l++; if(isDue(w.key)) d++; }
   return {total:ws.length,new:n,learning:l,learned:k,due:d};
 }
+// a day counts when at least one lesson was finished (older logs without lessons: 10+ answers)
+const dayDone=k=>{ const d=S.log[k]; return !!d && ((d.u||0)>0 || (d.r||0)>=10); };
 function streak(){
   let n=0, t=today();
-  if(!(S.log[dstr(t)]?.r>0)) t--;
-  while(S.log[dstr(t)]?.r>0){ n++; t--; }
+  if(!dayDone(dstr(t))) t--;
+  while(dayDone(dstr(t))){ n++; t--; }
   return n;
 }
 function newLeftToday(){ return Math.max(0, S.set.newPerDay - (L().n||0)); }
+// a finished study session, tense quiz or story; returns true for the first lesson of the day
+function lessonDone(){ const lg=L(), first=!(lg.u>0); lg.u=(lg.u||0)+1; persist(); return first; }
+
+// ---------- Koko the koala ----------
+function lessonGap(){ const t=today(); for(let i=0;i<=365;i++) if(dayDone(dstr(t-i))) return i; return null; }
+function koalaMood(){
+  const g=lessonGap();
+  if(g===0) return ["happy",0];
+  if(g===null) return [Object.keys(S.w).length?"sad2":"new",null];
+  return [g===1?"wait":g===2?"sad":"sad2",g];
+}
+function koalaLine(mood,g,sk){
+  if(mood==="happy") return sk>=2?[`Great job! ${sk} days in a row.`,`Отлично! Уже ${sk} ${plural(sk,"день","дня","дней")} подряд — Коко довольна.`]
+    :["Great job! Today's lesson is done.","Отлично! Урок на сегодня сделан — Коко довольна."];
+  if(mood==="wait") return ["I'm waiting for you! One lesson and I'll be happy.","Жду тебя! Один урок — и я буду счастлива."];
+  if(mood==="sad") return ["No lesson yesterday… I'm a little sad.","Вчера урока не было… Мне немножко грустно."];
+  if(mood==="sad2") return g?[`I haven't seen you for ${g} days… I miss you.`,`Не видела тебя уже ${g} ${plural(g,"день","дня","дней")}… Очень скучаю.`]
+    :["It's been ages… I miss you so much.","Давно тебя не было… Очень скучаю."];
+  return ["Hi! I'm Koko. Shall we learn together?","Привет! Я коала Коко. Будем учиться вместе?"];
+}
+const POKES=[["You can do it!","У тебя получится!"],["One more lesson?","Ещё один урок?"],["I'm learning with you.","Я учусь вместе с тобой."],["English is fun!","Английский — это весело!"],["Eucalyptus after the lesson?","Эвкалипт после урока?"]];
+function spark(x,y,s,delay){ const a=1.7*s,b=6*s;
+  return `<path class="spark" style="animation-delay:${delay}s" d="M${x} ${y-b}L${x+a} ${y-a}L${x+b} ${y}L${x+a} ${y+a}L${x} ${y+b}L${x-a} ${y+a}L${x-b} ${y}L${x-a} ${y-a}Z" fill="var(--sparkle)"/>`; }
+const heart=(cls,x,y,s)=>`<g class="heart ${cls}"><path transform="translate(${x} ${y}) scale(${s})" d="M0 3.2C-.6 2.6-5 .2-5-2.6a2.6 2.6 0 0 1 5-1.2a2.6 2.6 0 0 1 5 1.2C5 .2.6 2.6 0 3.2z" fill="#ff6f8e"/></g>`;
+// Koko is drawn from separate parts (head, fluffy ears, paws, eyes) so each can move on its own
+function koalaSVG(mood){
+  const happy=mood==="happy", sad=mood==="sad"||mood==="sad2", F="var(--koala)", Dk="var(--koala-dark)", Lt="var(--koala-light)", N="var(--koala-nose)", O='stroke="var(--koala-line)" stroke-width="2.2"';
+  const label={happy:"довольна",wait:"ждёт урока",new:"здоровается",sad:"грустит",sad2:"очень грустит"}[mood];
+  const px=sad?[45.5,74.5]:[46,74], py=sad?60:58.5;
+  const eyes=happy?`<path d="M40 60q6-7 12 0M68 60q6-7 12 0" fill="none" stroke="${N}" stroke-width="3" stroke-linecap="round"/>`
+    :`<g class="eyes"><g class="pupils"><ellipse cx="${px[0]}" cy="${py}" rx="4.4" ry="5" fill="${N}"/><ellipse cx="${px[1]}" cy="${py}" rx="4.4" ry="5" fill="${N}"/>
+      <circle cx="${px[0]+1.4}" cy="${py-1.9}" r="1.5" fill="#fff"/><circle cx="${px[1]+1.4}" cy="${py-1.9}" r="1.5" fill="#fff"/>
+      <circle cx="${px[0]-1.2}" cy="${py+1.8}" r=".7" fill="#fff"/><circle cx="${px[1]-1.2}" cy="${py+1.8}" r=".7" fill="#fff"/></g></g>`;
+  const mouth=happy?`<path d="M53.5 82q6.5 9 13 0z" fill="#5a2a33" stroke="${N}" stroke-width="1.8" stroke-linejoin="round"/><path d="M56.5 86q3.5 2.6 7 0q-3.5-2.2-7 0z" fill="#ff8fa3"/>`
+    :sad?`<path d="M54.5 86q5.5-5 11 0" fill="none" stroke="${N}" stroke-width="2" stroke-linecap="round"/>`
+    :`<path d="M55 83q2.5 2.6 5 0q2.5 2.6 5 0" fill="none" stroke="${N}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`;
+  const blush=`<g class="blush" opacity="${happy?.95:sad?.45:.75}"><ellipse cx="35" cy="75" rx="5.5" ry="3.3" fill="var(--blush)"/><ellipse cx="85" cy="75" rx="5.5" ry="3.3" fill="var(--blush)"/></g>`;
+  const brows=sad?`<path d="M38 48q6-5 12-4M70 44q6-1 12 4" fill="none" stroke="var(--koala-line)" stroke-width="2.2" stroke-linecap="round"/>`:"";
+  const tear=(cls,x)=>`<path class="tear ${cls}" d="M${x} 64q-3.6 5.6 0 8.4q3.6-2.8 0-8.4z" fill="var(--tear)"/>`;
+  const tears=mood==="sad"?tear("t1",77):mood==="sad2"?tear("t1",77)+tear("t2",43):"";
+  const ear=(cls,cx,ix,tufts)=>`<g class="${cls}"><circle cx="${cx}" cy="36" r="19" fill="${F}" ${O}/><circle cx="${ix}" cy="38" r="12" fill="var(--koala-ear)"/>${tufts.map(([x,y,r])=>`<circle cx="${x}" cy="${y}" r="${r}" fill="${Lt}"/>`).join("")}</g>`;
+  const leaf=happy?`<g class="leaf"><path d="M74 31q2-8 8-12" fill="none" stroke="var(--leaf-dark)" stroke-width="1.6" stroke-linecap="round"/>
+      <ellipse cx="81" cy="17" rx="3.6" ry="7" transform="rotate(40 81 17)" fill="var(--leaf)"/><ellipse cx="73" cy="21" rx="3" ry="6" transform="rotate(-30 73 21)" fill="var(--leaf)"/>
+      <path d="M81 17l-3.5 4.5M73 21l1.2 3.5" stroke="var(--leaf-dark)" stroke-width=".8" stroke-linecap="round"/></g>`:"";
+  const cloud=mood!=="sad2"?"":`<g class="cloud"><circle cx="49" cy="-6" r="7" fill="var(--cloud)"/><circle cx="60" cy="-10" r="9" fill="var(--cloud)"/><circle cx="71" cy="-6" r="7" fill="var(--cloud)"/><rect x="49" y="-6" width="22" height="7" rx="3.5" fill="var(--cloud)"/>
+    <path class="drop" d="M52 4v5" stroke="var(--tear)" stroke-width="2" stroke-linecap="round"/><path class="drop r2" d="M60 5v5" stroke="var(--tear)" stroke-width="2" stroke-linecap="round"/><path class="drop r3" d="M68 4v5" stroke="var(--tear)" stroke-width="2" stroke-linecap="round"/></g>`;
+  const fx=heart("h1",96,4,1.1)+heart("h2",24,2,.9)
+    +(happy?spark(8,62,.8,0)+spark(108,6,.8,.6)+spark(113,64,.6,1.1):"")
+    +(mood==="new"?spark(112,8,.8,0):"")
+    +(mood==="wait"?`<circle class="dot d1" cx="101" cy="6" r="2.2" fill="var(--muted)"/><circle class="dot d2" cx="108" cy="2" r="2.2" fill="var(--muted)"/><circle class="dot d3" cx="115" cy="-2" r="2.2" fill="var(--muted)"/>`:"");
+  return `<svg class="koala ${mood}" viewBox="0 -20 120 144" role="img" aria-label="Коала Коко ${label}">${cloud}<g class="pb">
+    <g ${O}><ellipse cx="45" cy="118" rx="10" ry="5.5" fill="${Dk}"/><ellipse cx="75" cy="118" rx="10" ry="5.5" fill="${Dk}"/></g>
+    <ellipse cx="45" cy="119" rx="3.6" ry="2.2" fill="#e8c9d2"/><ellipse cx="75" cy="119" rx="3.6" ry="2.2" fill="#e8c9d2"/>
+    <ellipse cx="60" cy="103" rx="29" ry="17" fill="${F}" ${O}/><ellipse cx="60" cy="106" rx="17" ry="11" fill="${Lt}"/>
+    <g class="head">
+      ${ear("el",24,25,[[21,46,3.2],[27,48,2.6],[17,39,2.6]])}${ear("er",96,95,[[99,46,3.2],[93,48,2.6],[103,39,2.6]])}
+      <ellipse cx="60" cy="60" rx="36" ry="32" fill="${F}" ${O}/>${leaf}
+      ${eyes}${brows}<ellipse cx="60" cy="69" rx="8.6" ry="10.5" fill="${N}"/><ellipse cx="57" cy="64.5" rx="2.4" ry="3.4" fill="#fff" opacity=".28"/>${mouth}${blush}${tears}
+    </g>
+    <g class="al"><ellipse cx="37" cy="100" rx="8.5" ry="13" transform="rotate(28 37 100)" fill="${Dk}" ${O}/></g>
+    <g class="ar"><ellipse cx="83" cy="100" rx="8.5" ry="13" transform="rotate(-28 83 100)" fill="${Dk}" ${O}/></g>
+  </g>${fx}</svg>`;
+}
+const PAW='<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="9" r="2.4"/><circle cx="12" cy="6.2" r="2.4"/><circle cx="17.5" cy="9" r="2.4"/><path d="M12 11.5c-3.2 0-6 3.4-6 5.8 0 1.8 1.6 2.7 3.2 2.2.9-.3 1.8-.5 2.8-.5s1.9.2 2.8.5c1.6.5 3.2-.4 3.2-2.2 0-2.4-2.8-5.8-6-5.8z"/></svg>';
+function buddyHTML(sk){
+  const [mood,g]=koalaMood(), [en,ru]=koalaLine(mood,g,sk), t=today(), wd=["вс","пн","вт","ср","чт","пт","сб"];
+  const week=[...Array(7)].map((_,i)=>{ const d=t-6+i, on=dayDone(dstr(d));
+    return `<div class="day${on?" on":""}${i===6?" today":""}"><i>${on?PAW:""}</i>${i===6?"сег.":wd[new Date(d*DAY).getUTCDay()]}</div>`; }).join("");
+  return `<section class="buddy">${koalaSVG(mood)}<div class="bubble" id="bubble"><b lang="en">${en}</b><span>${ru}</span></div>
+    <div class="week" role="img" aria-label="Уроки за последние 7 дней: ${[...Array(7)].filter((_,i)=>dayDone(dstr(t-6+i))).length} из 7">${week}</div></section>`;
+}
+// shown on a finished session, quiz or story
+function koalaDone(first){
+  const sk=streak(), [en,ru]=first?koalaLine("happy",0,sk):["Another lesson — awesome!","Ещё один урок — супер!"];
+  return `<div class="buddy-done">${koalaSVG("happy")}<div class="bubble up"><b lang="en">${en}</b><span>${ru}</span></div></div>`;
+}
+function pokeKoala(e){
+  const p=e.currentTarget; p.classList.remove("poke"); void p.getBBox(); p.classList.add("poke");
+  clearTimeout(p._t); p._t=setTimeout(()=>p.classList.remove("poke"),700);
+  const b=$("#bubble"); if(b){ const [en,ru]=POKES[Math.floor(Math.random()*POKES.length)]; b.innerHTML=`<b lang="en">${en}</b><span>${ru}</span>`; }
+}
 
 // ---------- navigation ----------
 let view={tab:"home"}, session=null, tSession=null;
@@ -832,6 +1007,7 @@ function homeHTML(){
   return `
   <div class="top"><div class="brand"><h1>English</h1><span class="lvl">B2</span></div>
     <div style="display:flex;flex:none;align-items:center;gap:10px"><span class="sync" id="sync"><i></i> …</span><button class="iconbtn" id="settings" aria-label="Настройки">${ICON.gear}</button></div></div>
+  ${buddyHTML(sk)}
   <section class="hero">
     <div><div class="eyebrow">${new Date().toLocaleDateString("ru-RU",{weekday:"long",day:"numeric",month:"long"})}</div>
       <h2><span class="mark">${greet}</span></h2>
@@ -1043,15 +1219,19 @@ document.addEventListener("keydown",e=>{
 });
 function renderDone(early){
   const s=session, n=s.ok+s.bad, acc=n?Math.round(s.ok/n*100):0, r=L().r;
+  // a lesson counts when the session is finished, or after at least 10 answers
+  const counted=!early||n>=10, first=counted&&lessonDone();
   clearTimeout(s.autoNext); pushRemote();
   $("#app").innerHTML=`<div class="panel done-card" style="padding:28px 20px">
+    ${counted?koalaDone(first):""}
     <div class="eyebrow">${early?"Занятие прервано":"Занятие завершено"}</div>
     <div class="big num" id="bigNum">${acc}%</div><div class="muted num">${s.ok} верно · ${s.bad} ${plural(s.bad,"ошибка","ошибки","ошибок")}</div>
     <div class="small muted num">Сегодня всего: ${r} ${plural(r,"ответ","ответа","ответов")} из цели ${S.set.goal}</div>
     <div class="row" style="width:100%"><button class="btn ghost" id="toHome">${view.tab==="home"?"На главную":"Назад"}</button>
     ${!s.drill&&themeStats(s.ti).due?`<button class="btn primary" id="again">Ещё повторение</button>`:`<button class="btn primary" id="more">${s.drill?"Ещё тренировка":"+10 новых"}</button>`}</div></div>`;
   const ti=s.ti, drill=s.drill; session=null;
-  countUp($("#bigNum"),acc,"%"); if(!early && n>=5 && acc>=90) confetti();
+  countUp($("#bigNum"),acc,"%"); if(first || !early && n>=5 && acc>=90) confetti();
+  document.querySelectorAll(".koala").forEach(p=>p.onclick=pokeKoala);
   $("#toHome").onclick=()=>go(view);
   const ag=$("#again"); if(ag) ag.onclick=()=>startSession(ti);
   const mo=$("#more"); if(mo) mo.onclick=()=>drill?startSession(ti,null,true):startSession(ti,10);
@@ -1107,13 +1287,14 @@ function renderTenseQuiz(){
   if(s.i>=s.items.length){
     const pct=Math.round(s.ok/s.items.length*100);
     if(s.id){ S.tn[s.id]=Math.max(S.tn[s.id]||0,pct); } else { S.tn.mix=Math.max(S.tn.mix||0,pct); }
-    persist(); pushRemote();
-    a.innerHTML=`<div class="panel done-card" style="padding:28px 20px"><div class="eyebrow">${s.id?esc(TB[s.id].name):"Смешанный тест"}</div>
+    const first=lessonDone(); pushRemote();
+    a.innerHTML=`<div class="panel done-card" style="padding:28px 20px">${koalaDone(first)}<div class="eyebrow">${s.id?esc(TB[s.id].name):"Смешанный тест"}</div>
       <div class="big num" id="bigNum">${pct}%</div><div class="muted num">${s.ok} из ${s.items.length} верно</div>
       ${pct>=80?`<div class="pill" style="background:var(--good-soft)">Тема освоена</div>`:`<div class="small muted">Для зачёта нужно 80%. Перечитайте правило и попробуйте снова.</div>`}
       <div class="row" style="width:100%"><button class="btn ghost" id="tBack">${s.id?"К правилу":"К временам"}</button><button class="btn primary" id="tAgain">Ещё раз</button></div></div>`;
     const id=s.id; tSession=null;
-    countUp($("#bigNum"),pct,"%"); if(pct>=80) confetti();
+    countUp($("#bigNum"),pct,"%"); if(pct>=80||first) confetti();
+    document.querySelectorAll(".koala").forEach(p=>p.onclick=pokeKoala);
     $("#tBack").onclick=()=>go({tab:"tense",tense:id||null});
     $("#tAgain").onclick=()=>startTenseQuiz(id);
     return;
@@ -1196,9 +1377,12 @@ function answerQ(qel,btn){
   const qs=[...document.querySelectorAll(".q")];
   if(!qs.every(x=>x.dataset.done)) return;
   const score=qs.filter(x=>!x.querySelector(".opt.wrong")).length, all=score===s.q.length;
-  S.rd[s.id]=Math.max(S.rd[s.id]??0,score); persist();
-  $("#qres").innerHTML=`<div class="fb ${all?"ok":"no"}">${all?"Отлично, всё верно!":`Верно ${score} из ${s.q.length}.`} История отмечена как прочитанная.</div>`;
-  if(all) confetti();
+  S.rd[s.id]=Math.max(S.rd[s.id]??0,score);
+  const first=lessonDone();
+  $("#qres").innerHTML=`<div class="fb ${all?"ok":"no"}">${all?"Отлично, всё верно!":`Верно ${score} из ${s.q.length}.`} История отмечена как прочитанная.</div>
+    <div style="margin-top:14px">${koalaDone(first)}</div>`;
+  $("#qres .koala").onclick=pokeKoala;
+  if(all||first) confetti();
 }
 
 // ---------- STATS ----------
@@ -1331,6 +1515,7 @@ function openSettings(){
 function bind(){
   const on=(sel,fn)=>{ const el=$(sel); if(el) el.onclick=fn; };
   on("#settings",openSettings);
+  document.querySelectorAll(".koala").forEach(p=>p.onclick=pokeKoala);
   on("#start",()=>startSession(null));
   on("#extra",()=>startSession(null,10));
   on("#mixTest",()=>startTenseQuiz(null));
